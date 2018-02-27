@@ -57,7 +57,7 @@ module.exports = {
   loading: {
     color: '#82b1ff',
     failedColor: '#ff8a80',
-    height: '3px'
+    height: '5px'
   },
 
   /*
@@ -69,7 +69,12 @@ module.exports = {
      * Babel configutation
      */
     babel: {
+      presets: [
+        'env',
+        'stage-0'
+      ],
       plugins: [
+        'transform-runtime',
         ['transform-imports', {
           'vuetify': {
             'transform': 'vuetify/es5/components/${member}',
