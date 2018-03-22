@@ -70,6 +70,6 @@
     "pug": "^2.0.0-rc.4",
     "sass-loader": "^6.0.7",
     "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.2",
+    "stylus-loader": "^3.0.2"
   }
 }
