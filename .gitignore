@@ -13,3 +13,5 @@ dist
 .env
 
 static/sw.js
+
+package-lock.json
