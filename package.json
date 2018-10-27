@@ -50,6 +50,7 @@
     "vuetify-loader": "^1.0.5"
   },
   "devDependencies": {
+    "@mdi/font": "^3.0.39",
     "babel-core": "^6.26.3",
     "babel-eslint": "^10.0.1",
     "babel-plugin-module-resolver": "^3.1.1",

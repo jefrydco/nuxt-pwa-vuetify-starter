@@ -915,6 +915,11 @@
   dependencies:
     core-js "^2.5.7"
 
+"@mdi/font@^3.0.39":
+  version "3.0.39"
+  resolved "https://registry.npmjs.org/@mdi/font/-/font-3.0.39.tgz#8a388ec9816939eff2099120102073aecdf6e5f8"
+  integrity sha512-VnPxEXsiV+YP9NO7XyQEvs1tBxkmtPzib9dRq/1CqubaZy9oeP7Jmgd/IEya8Z3bVyj+NZpwS0YGZW1kvx2eFQ==
+
 "@nuxtjs/axios@^5.3.3":
   version "5.3.3"
   resolved "https://registry.npmjs.org/@nuxtjs/axios/-/axios-5.3.3.tgz#0b09604e4c5e4b3ef1b5baac507e34ee25a3f82d"
