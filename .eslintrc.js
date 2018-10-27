@@ -1,16 +1,41 @@
+const path = require("path");
+
 module.exports = {
   root: true,
-  parser: 'babel-eslint',
   env: {
     browser: true,
     node: true
   },
-  extends: 'standard',
-  // required to lint *.vue files
-  plugins: [
-    'html'
+  parserOptions: {
+    parser: "babel-eslint"
+  },
+  extends: [
+    "airbnb-base",
+    "plugin:vue/recommended",
+    "plugin:prettier/recommended"
   ],
-  // add your custom rules here
-  rules: {},
-  globals: {}
-}
+  plugins: ["import", "vue", "prettier"],
+  settings: {
+    "import/resolver": {
+      "babel-module": {},
+      alias: {
+        map: [
+          ["^~", path.resolve(__dirname, "./")],
+          ["^@", path.resolve(__dirname, "./")]
+        ],
+        extensions: [".vue", ".js"]
+      },
+      node: {
+        moduleDirectory: ["node_modules"]
+      }
+    }
+  },
+  rules: {
+    "no-console": "off",
+    "no-param-reassign": "off",
+    "no-unused-vars": "off",
+    "inebreak-style": "off",
+    "import/no-extraneous-dependencies": "off",
+    "prettier/prettier": "error"
+  }
+};

@@ -1,16 +1,17 @@
-<template lang="pug">
-  .vue-to-nuxt-logo
-    .triangle(
-      :key="i"
-      v-for="i in 4"
-      :class="`triangle-${i}`"
-    )
+<template>
+  <div class="vue-to-nuxt-logo">
+    <div 
+      v-for="i in 4" 
+      :key="i" 
+      :class="`triangle-${i}`" 
+      class="triangle"/>
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'nuxt-logo'
-}
+  name: "NuxtLogo"
+};
 </script>
 
 

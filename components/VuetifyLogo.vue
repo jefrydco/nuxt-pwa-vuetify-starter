@@ -1,15 +1,15 @@
-<template lang="pug">
-  img.vuetify-logo(
-    src="/icon.png"
-    alt="Vuetify.js"
-    width="200"
-  )
+<template>
+  <img 
+    class="vuetify-logo" 
+    src="/icon.png" 
+    alt="Vuetify.js" 
+    width="200" >
 </template>
 
 <script>
 export default {
-  name: 'vuetify-logo'
-}
+  name: "VuetifyLogo"
+};
 </script>
 
 
