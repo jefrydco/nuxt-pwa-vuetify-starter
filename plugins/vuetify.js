@@ -1,6 +1,5 @@
-import Vue from 'vue'
-import {
-  Vuetify,
+import Vue from "vue";
+import Vuetify, {
   VApp,
   VCard,
   VNavigationDrawer,
@@ -8,11 +7,14 @@ import {
   VList,
   VBtn,
   VIcon,
-  VGrid,
   VToolbar
-} from 'vuetify'
+} from "vuetify/lib";
+import { Ripple } from "vuetify/lib/directives";
 
 Vue.use(Vuetify, {
+  directives: {
+    Ripple
+  },
   components: {
     VApp,
     VCard,
@@ -21,7 +23,6 @@ Vue.use(Vuetify, {
     VList,
     VBtn,
     VIcon,
-    VGrid,
     VToolbar
   }
-})
+});

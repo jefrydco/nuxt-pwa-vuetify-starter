@@ -1,4 +1,5 @@
 import nodeExternals from "webpack-node-externals";
+import VuetifyLoaderPlugin from "vuetify-loader/lib/plugin";
 
 export default {
   /*
@@ -64,30 +65,13 @@ export default {
      */
     extractCSS: true,
     transpile: [/^vuetify/],
-
-    /**
-     * Babel configutation
-     */
-    babel: {
-      plugins: [
-        [
-          "transform-imports",
-          {
-            vuetify: {
-              // eslint-disable-next-line
-              transform: "vuetify/es5/components/${member}",
-              preventFullImport: true
-            }
-          }
-        ]
-      ]
-    },
+    plugins: [new VuetifyLoaderPlugin()],
 
     /*
     ** Run ESLint on save
     */
-    extend(config, { isDev }) {
-      if (isDev && process.client) {
+    extend(config, { isDev, isClient }) {
+      if (isDev && isClient) {
         config.module.rules.push({
           enforce: "pre",
           test: /\.(js|vue)$/,
