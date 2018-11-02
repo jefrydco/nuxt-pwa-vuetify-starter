@@ -15,3 +15,5 @@ dist
 static/sw.js
 
 package-lock.json
+
+test/unit/coverage/**/*

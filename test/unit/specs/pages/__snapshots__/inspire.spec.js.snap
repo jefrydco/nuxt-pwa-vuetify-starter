@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Inspire renders to a snapshot 1`] = `
+<vlayout-stub
+  align-center="align-center"
+  column="column"
+  justify-center="justify-center"
+  tag="div"
+>
+  <vflex-stub
+    class="text-xs-center"
+    tag="div"
+  >
+    <div
+      class="my-5"
+    >
+      <nuxt-logo-stub />
+       
+      <vuetify-logo-stub />
+    </div>
+     
+    <blockquote
+      class="blockquote"
+    >
+      <div>
+        “First, solve the problem. Then, write the code.”
+      </div>
+       
+      <footer>
+        <small>
+          <em>
+            —John Johnson
+          </em>
+        </small>
+      </footer>
+    </blockquote>
+  </vflex-stub>
+</vlayout-stub>
+`;

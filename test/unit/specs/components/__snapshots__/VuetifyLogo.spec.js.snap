@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Vuetify logo renders to a snapshot 1`] = `
+<img
+  alt="Vuetify.js"
+  class="vuetify-logo"
+  src="/icon.png"
+  width="200"
+/>
+`;

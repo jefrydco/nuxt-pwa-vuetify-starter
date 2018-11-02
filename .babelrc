@@ -1,4 +1,8 @@
 {
+  "presets": [
+    "env",
+    "vue"
+  ],
   "plugins": [
     [
       "module-resolver",

@@ -3,13 +3,11 @@
     class="vuetify-logo" 
     src="/icon.png" 
     alt="Vuetify.js" 
-    width="200" >
+    width="200">
 </template>
 
 <script>
-export default {
-  name: "VuetifyLogo"
-};
+export default {};
 </script>
 
 

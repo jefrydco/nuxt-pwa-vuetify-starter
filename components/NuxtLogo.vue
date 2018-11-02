@@ -9,9 +9,7 @@
 </template>
 
 <script>
-export default {
-  name: "NuxtLogo"
-};
+export default {};
 </script>
 
 
