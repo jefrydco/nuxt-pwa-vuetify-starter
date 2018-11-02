@@ -37,7 +37,7 @@
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint",
-    "test": "jest --config test/unit/jest.conf.js --coverage --no-cache"
+    "test": "jest --config test/unit/jest.config.js --coverage --no-cache"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.4",
@@ -47,7 +47,6 @@
     "@nuxtjs/pwa": "^2.6.0",
     "@nuxtjs/sentry": "^2.0.0",
     "@nuxtjs/sitemap": "^0.1.1",
-    "@vue/server-test-utils": "^1.0.0-beta.25",
     "nuxt": "^2.2.0",
     "vee-validate": "^2.1.1",
     "vuetify": "^1.3.5"
@@ -58,7 +57,9 @@
     "babel-core": "^6.26.3",
     "babel-eslint": "^10.0.1",
     "babel-plugin-module-resolver": "^3.1.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
     "babel-plugin-transform-imports": "^1.5.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-vue": "^2.0.2",
     "eslint": "^5.8.0",
@@ -72,12 +73,13 @@
     "husky": "^1.1.3",
     "jest": "^23.6.0",
     "jest-serializer-vue": "^2.0.2",
-    "jest-vue-preprocessor": "^1.4.0",
+    "jest-transform-stub": "^1.0.0",
     "lint-staged": "^8.0.4",
     "node-sass": "^4.9.4",
     "sass-loader": "^7.1.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
+    "vue-jest": "^3.0.0",
     "vuetify-loader": "^1.0.5"
   },
   "husky": {

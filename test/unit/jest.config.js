@@ -4,20 +4,20 @@ module.exports = {
   rootDir: path.resolve(__dirname, "../../"),
   testURL: "http://localhost",
   moduleNameMapper: {
-    "^~/(.*)$": "<rootDir>/$1"
+    "^~/(.*)$": "<rootDir>/$1",
+    "^@/(.*)$": "<rootDir>/$1",
+    "^vue$": "vue/dist/vue.common.js"
   },
   verbose: true,
   transform: {
-    ".*?\\.vue$": "<rootDir>/node_modules/jest-vue-preprocessor",
-    ".*": "babel-jest"
+    "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
+    "^.+\\.vue$": "<rootDir>/node_modules/vue-jest",
+    ".+\\.(css|styl|less|sass|scss|png|jpg|svg|ttf|woff|woff2)$":
+      "jest-transform-stub"
   },
-  moduleFileExtensions: ["vue", "js", "jsx", "json", "node"],
+  moduleFileExtensions: ["js", "json", "vue"],
   snapshotSerializers: ["<rootDir>/node_modules/jest-serializer-vue"],
-  testPathIgnorePatterns: [
-    "<rootDir>/test/e2e",
-    "<rootDir>/components/*.vue",
-    "<rootDir>/node_modules"
-  ],
+  testPathIgnorePatterns: ["<rootDir>/test/e2e", "<rootDir>/node_modules"],
   transformIgnorePatterns: ["/node_modules/(?!(@storybook/.*\\.vue$))"],
   testRegex: "(/__tests__/.*|\\.(test|spec))\\.(ts|js)$",
   coverageDirectory: "<rootDir>/test/unit/coverage",
@@ -25,7 +25,6 @@ module.exports = {
     "components/**/*.{js,ts,vue}",
     "layouts/**/*.{js,ts,vue}",
     "pages/**/*.{js,ts,vue}",
-    "!**/node_modules/**",
-    "!components/**/*.story.js"
+    "!**/node_modules/**"
   ]
 };
