@@ -70,11 +70,6 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-    <v-footer 
-      :fixed="fixed" 
-      class="pa-3" 
-      app="app">
-    <v-spacer/><span v-html="copyright"/></v-footer>
   </v-app>
 </template>
 
@@ -95,11 +90,6 @@ export default {
       rightDrawer: false,
       title: "Vuetify.js"
     };
-  },
-  computed: {
-    copyright() {
-      return `Copyright &copy; ${new Date().getFullYear()} jefrydco`;
-    }
   }
 };
 </script>
