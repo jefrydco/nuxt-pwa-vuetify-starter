@@ -8,7 +8,6 @@ This starter project includes official Nuxt.js modules for best PWA project:
 - [Axios](https://github.com/nuxt-community/axios-module)
 - [Browserconfig](https://github.com/nuxt-community/modules/tree/master/packages/browserconfig)
 - [Component-cache](https://github.com/nuxt-community/modules/tree/master/packages/component-cache)
-- [Dotenv](https://github.com/nuxt-community/dotenv-module)
 - [Google-analytics](https://github.com/nuxt-community/analytics-module)
 - [PWA](https://github.com/nuxt-community/pwa-module)
 - [Sentry](https://github.com/nuxt-community/sentry-module)
@@ -33,7 +32,7 @@ $ npm run generate
 
 ## Getting Started
 
-Don't forget to edit `SENTRY_DSN` and `ANALYTICS_ID` environment variable in `.env`.
+Don't forget to add your sentry dsn and google analytics id in `nuxt.config.js` file.
 
 For detailed explanation on how things work, check out the [Nuxt.js](https://github.com/nuxt/nuxt.js) and [Vuetify.js](https://vuetifyjs.com/) documentation.
 

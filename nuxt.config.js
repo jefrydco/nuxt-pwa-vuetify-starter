@@ -39,8 +39,24 @@ export default {
     "@nuxtjs/browserconfig",
     "@nuxtjs/component-cache",
     "@nuxtjs/pwa",
-    "@nuxtjs/sitemap"
+    "@nuxtjs/sitemap",
+    "@nuxtjs/sentry",
+    [
+      "@nuxtjs/google-analytics",
+      {
+        // TODO: Change this id to your Google Analytics ID
+        id: "UA-XXXXX-X"
+      }
+    ]
   ],
+
+  /**
+   * Sentry Configuration
+   */
+  sentry: {
+    // TODO: Change this dsn to your dsn value
+    dsn: ""
+  },
 
   /**
    * Custom CSS
