@@ -1,102 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Index renders to a snapshot 1`] = `
-<vlayout-stub
-  align-center="align-center"
-  column="column"
-  justify-center="justify-center"
-  tag="div"
->
-  <vflex-stub
-    md6="md6"
-    sm8="sm8"
-    tag="div"
-    xs12="xs12"
-  >
-    <div
-      class="text-xs-center my-5"
-    >
-      <nuxt-logo-stub />
-       
-      <vuetify-logo-stub />
-    </div>
-     
-    <vcard-stub
-      tag="div"
-    >
-      <vcardtitle-stub
-        class="headline"
-      />
-       
+exports[`Index renders to match snapshot 1`] = `
+<vlayout-stub tag="div" column="" justify-center="" align-center="">
+  <vflex-stub tag="div" xs12="" sm8="" md6="">
+    <div class="text-xs-center"><img src="~static/v.png" alt="Vuetify.js" class="mb-5"></div>
+    <vcard-stub tag="div">
+      <vcardtitle-stub class="headline">Welcome to the Vuetify + Nuxt.js template</vcardtitle-stub>
       <vcardtext-stub>
-        <p>
-          Vuetify is a progressive Material Design component framework for Vue.js. It was designed to empower developers to create amazing applications.
-        </p>
-        <p>
-          For more information on Vuetify, check out the 
-          <a
-            href="https://vuetifyjs.com"
-            target="_blank"
-          >
-            documentation
-          </a>
-          .
-        </p>
-        <p>
-          If you have questions, please join the official 
-          <a
-            href="https://chat.vuetifyjs.com/"
-            target="_blank"
-            title="chat"
-          >
-            discord
-          </a>
-          .
-        </p>
-        <p>
-          Find a bug? Report it on the github 
-          <a
-            href="https://github.com/vuetifyjs/vuetify/issues"
-            target="_blank"
-            title="contribute"
-          >
-            issue board
-          </a>
-          .
-        </p>
-        <p>
-          Thank you for developing with Vuetify and I look forward to bringing more exciting features in the future.
-        </p>
-         
-        <div
-          class="text-xs-right"
-        >
-          <em>
-            <small>
-              — John Leider
-            </small>
-          </em>
-        </div>
-         
-        <hr
-          class="mt-3"
-        />
+        <appcomponent-stub></appcomponent-stub>
+        <p>Vuetify is a progressive Material Design component framework for Vue.js. It was designed to empower developers to create amazing applications.</p>
+        <p>For more information on Vuetify, check out the <a href="https://vuetifyjs.com" target="_blank">documentation</a>.</p>
+        <p>If you have questions, please join the official <a href="https://chat.vuetifyjs.com/" target="_blank" title="chat">discord</a>.</p>
+        <p>Find a bug? Report it on the github <a href="https://github.com/vuetifyjs/vuetify/issues" target="_blank" title="contribute">issue board</a>.</p>
+        <p>Thank you for developing with Vuetify and I look forward to bringing more exciting features in the future.</p>
+        <div class="text-xs-right"><em><small>— John Leider</small></em></div>
+        <hr class="my-3"> <a href="https://nuxtjs.org/" target="_blank">Nuxt Documentation</a> <br> <a href="https://github.com/nuxt/nuxt.js" target="_blank">Nuxt GitHub</a>
       </vcardtext-stub>
-       
       <vcardactions-stub>
-        <vspacer-stub />
-         
-        <vbtn-stub
-          activeclass="v-btn--active"
-          color="primary"
-          flat="true"
-          nuxt="nuxt"
-          tag="button"
-          to="/inspire"
-          type="button"
-        >
-          Continue
-        </vbtn-stub>
+        <vspacer-stub></vspacer-stub>
+        <vbtn-stub activeclass="v-btn--active" flat="true" tag="button" type="button" color="primary" nuxt="" to="/inspire">Continue</vbtn-stub>
       </vcardactions-stub>
     </vcard-stub>
   </vflex-stub>

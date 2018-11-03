@@ -1,16 +1,18 @@
 <template>
-  <v-layout 
-    column="column" 
-    justify-center="justify-center" 
-    align-center="align-center">
-    <v-flex class="text-xs-center">
-      <div class="my-5">
-        <nuxt-logo/>
-        <vuetify-logo/>
-      </div>
+  <v-layout>
+    <v-flex text-xs-center>
+      <img 
+        src="~static/v.png" 
+        alt="Vuetify.js" 
+        class="mb-5"
+      >
       <blockquote class="blockquote">
-        <div v-html="blockquote"/>
-        <footer><small><em v-html="author"/></small></footer>
+        &#8220;First, solve the problem. Then, write the code.&#8221;
+        <footer>
+          <small>
+            <em>&mdash;John Johnson</em>
+          </small>
+        </footer>
       </blockquote>
     </v-flex>
   </v-layout>
@@ -19,11 +21,7 @@
 <script>
 export default {
   data() {
-    return {
-      blockquote:
-        "&#8220;First, solve the problem. Then, write the code.&#8221;",
-      author: "&mdash;John Johnson"
-    };
+    return {};
   }
 };
 </script>

@@ -1,5 +1,3 @@
-const path = require("path");
-
 module.exports = {
   root: true,
   env: {
@@ -9,32 +7,17 @@ module.exports = {
   parserOptions: {
     parser: "babel-eslint"
   },
-  extends: [
-    "airbnb-base",
-    "plugin:vue/recommended",
-    "plugin:prettier/recommended"
-  ],
+  extends: ["@nuxtjs", "plugin:vue/recommended", "plugin:prettier/recommended"],
   plugins: ["import", "vue", "prettier"],
   settings: {
     "import/resolver": {
-      "babel-module": {},
-      alias: {
-        map: [
-          ["^~", path.resolve(__dirname, "./")],
-          ["^@", path.resolve(__dirname, "./")]
-        ],
-        extensions: [".vue", ".js"]
-      },
       node: {
-        moduleDirectory: ["node_modules"]
+        extensions: [".js", ".jsx", ".vue"]
       }
     }
   },
   rules: {
-    "no-console": "off",
     "no-param-reassign": "off",
-    "no-unused-vars": "off",
-    "inebreak-style": "off",
     "import/no-extraneous-dependencies": "off",
     "prettier/prettier": "error"
   }

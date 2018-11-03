@@ -2,45 +2,38 @@ import nodeExternals from "webpack-node-externals";
 import VuetifyLoaderPlugin from "vuetify-loader/lib/plugin";
 
 export default {
-  /*
-  ** Headers of the page
-  */
+  // https://nuxtjs.org/api/configuration-head
   head: {
-    title: "nuxt-pwa-vuetify-starter",
+    titleTemplate: title =>
+      title ? `${title} - Nuxt PWA Vuetify` : "Nuxt PWA Vuetify",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      {
-        hid: "description",
-        name: "description",
-        content: "Nuxt.js + Vuetify.js project"
-      }
-    ],
-    link: [
-      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
-      {
-        rel: "stylesheet",
-        href:
-          "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons"
-      }
+      { hid: "description", name: "description", content: "" }
     ]
   },
 
-  /**
-   * Plugins
-   */
-  plugins: ["~/plugins/vuetify.js", "~/plugins/components.js"],
-
-  /**
-   * Modules
-   */
+  // https://nuxtjs.org/api/configuration-modules
   modules: [
+    // https://axios.nuxtjs.org/
     "@nuxtjs/axios",
+
+    // https://github.com/nuxt-community/modules/tree/master/packages/browserconfig
     "@nuxtjs/browserconfig",
+
+    // https://nuxtjs.org/faq/cached-components/
     "@nuxtjs/component-cache",
+
+    // https://pwa.nuxtjs.org/
     "@nuxtjs/pwa",
+
+    // https://github.com/nuxt-community/sitemap-module
     "@nuxtjs/sitemap",
+
+    // https://github.com/nuxt-community/sentry-module
     "@nuxtjs/sentry",
+
+    // https://github.com/nuxt-community/analytics-module
     [
       "@nuxtjs/google-analytics",
       {
@@ -50,49 +43,30 @@ export default {
     ]
   ],
 
-  /**
-   * Sentry Configuration
-   */
+  // https://github.com/nuxt-community/sentry-module#readme
   sentry: {
     // TODO: Change this dsn to your dsn value
     dsn: ""
   },
 
-  /**
-   * Custom CSS
-   */
-  css: ["~/assets/style/vuetify.styl"],
+  // https://nuxtjs.org/api/configuration-plugins
+  plugins: ["~/plugins/vuetify", "~/plugins/vee-validate"],
 
-  /*
-  ** Customize the progress bar color
-  */
-  loading: {
-    color: "#82b1ff",
-    failedColor: "#ff8a80",
-    height: "5px"
-  },
+  // https://nuxtjs.org/api/configuration-css
+  css: ["~/assets/styles/fonts.css", "~/assets/styles/vuetify.styl"],
 
-  /*
-  ** Build configuration
-  */
+  // https://nuxtjs.org/api/configuration-build
   build: {
-    /**
-     * Extract CSS
-     */
     extractCSS: true,
     transpile: [/^vuetify/],
     plugins: [new VuetifyLoaderPlugin()],
-
-    /*
-    ** Run ESLint on save
-    */
     extend(config, { isDev, isClient }) {
       if (isDev && isClient) {
         config.module.rules.push({
           enforce: "pre",
           test: /\.(js|vue)$/,
           loader: "eslint-loader",
-          exclude: /(node_modules)/,
+          exclude: /node_modules/,
           options: {
             fix: true
           }

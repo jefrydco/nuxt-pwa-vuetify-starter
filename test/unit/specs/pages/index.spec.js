@@ -1,22 +1,18 @@
-import { createLocalVue, shallowMount } from "@vue/test-utils";
+import { shallowMount, createLocalVue } from "@vue/test-utils";
 import Vuetify from "vuetify";
+import VeeValidate from "vee-validate";
 
 import Index from "~/pages/index";
 
+const localVue = createLocalVue();
+localVue.use(Vuetify);
+localVue.use(VeeValidate);
+
 describe("Index", () => {
-  let wrapper;
-
-  beforeAll(() => {
-    const localVue = createLocalVue();
-    localVue.use(Vuetify);
-
-    wrapper = shallowMount(Index, {
-      localVue,
-      stubs: ["nuxt-logo", "vuetify-logo"]
+  it("renders to match snapshot", () => {
+    const wrapper = shallowMount(Index, {
+      localVue
     });
-  });
-
-  it("renders to a snapshot", () => {
-    expect(wrapper.element).toMatchSnapshot();
+    expect(wrapper).toMatchSnapshot();
   });
 });

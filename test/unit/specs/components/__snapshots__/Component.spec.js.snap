@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component renders to match snapshot 1`] = `
+<div id="component" class="mb-3">
+  <vtextfield-stub error-messages="" box="" label="Example" required="" data-vv-name="example" data-vv-as="Example"></vtextfield-stub>
+</div>
+`;

@@ -1,7 +1,0 @@
-{
-  "*.{vue,js}": [
-    "prettier --write",
-    "eslint --fix",
-    "git add"
-  ]
-}

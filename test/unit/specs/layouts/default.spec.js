@@ -1,22 +1,22 @@
-import { createLocalVue, shallowMount } from "@vue/test-utils";
+import { mount, createLocalVue, RouterLinkStub } from "@vue/test-utils";
 import Vuetify from "vuetify";
-import DefaultLayout from "~/layouts/default";
+import VeeValidate from "vee-validate";
+
+import Default from "~/layouts/default";
+
+const localVue = createLocalVue();
+localVue.use(Vuetify);
+localVue.use(VeeValidate);
 
 describe("Default layout", () => {
-  let wrapper;
-
-  beforeAll(() => {
-    const localVue = createLocalVue();
-
-    localVue.use(Vuetify);
-
-    wrapper = shallowMount(DefaultLayout, {
+  it("renders to match snapshot", () => {
+    const wrapper = mount(Default, {
       localVue,
-      stubs: ["nuxt"]
+      stubs: {
+        nuxt: "nuxt",
+        "router-link": RouterLinkStub
+      }
     });
-  });
-
-  it("renders to a snapshot", () => {
-    expect(wrapper.element).toMatchSnapshot();
+    expect(wrapper).toMatchSnapshot();
   });
 });

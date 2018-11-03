@@ -1,128 +1,60 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Default layout renders to a snapshot 1`] = `
-<vapp-stub
-  id="app"
->
-  <vnavigationdrawer-stub
-    app="app"
-    fixed="fixed"
-    height="100%"
-    minivariantwidth="80"
-    mobilebreakpoint="1264"
-    value="true"
-    width="300"
-  >
-    <vlist-stub>
-      <vlisttile-stub
-        activeclass="primary--text"
-        exact="exact"
-        router="router"
-        to="/"
-      >
-        <vlisttileaction-stub>
-          <vicon-stub />
-        </vlisttileaction-stub>
-         
-        <vlisttilecontent-stub>
-          <vlisttiletitle-stub />
-        </vlisttilecontent-stub>
-      </vlisttile-stub>
-      <vlisttile-stub
-        activeclass="primary--text"
-        exact="exact"
-        router="router"
-        to="/inspire"
-      >
-        <vlisttileaction-stub>
-          <vicon-stub />
-        </vlisttileaction-stub>
-         
-        <vlisttilecontent-stub>
-          <vlisttiletitle-stub />
-        </vlisttilecontent-stub>
-      </vlisttile-stub>
-    </vlist-stub>
-  </vnavigationdrawer-stub>
-   
-  <vtoolbar-stub
-    app="app"
-    color="primary"
-    dark="dark"
-    fixed="fixed"
-    scrollthreshold="300"
-  >
-    <vtoolbarsideicon-stub />
-     
-    <vbtn-stub
-      activeclass="v-btn--active"
-      icon="true"
-      tag="button"
-      type="button"
-    >
-      <vicon-stub />
-    </vbtn-stub>
-     
-    <vbtn-stub
-      activeclass="v-btn--active"
-      icon="true"
-      tag="button"
-      type="button"
-    >
-      <vicon-stub />
-    </vbtn-stub>
-     
-    <vbtn-stub
-      activeclass="v-btn--active"
-      icon="true"
-      tag="button"
-      type="button"
-    >
-      <vicon-stub />
-    </vbtn-stub>
-     
-    <vtoolbartitle-stub />
-     
-    <vbtn-stub
-      activeclass="v-btn--active"
-      icon="true"
-      tag="button"
-      type="button"
-    />
-  </vtoolbar-stub>
-   
-  <vcontent-stub
-    tag="main"
-  >
-    <vcontainer-stub
-      tag="div"
-    >
-      <nuxt-stub />
-    </vcontainer-stub>
-  </vcontent-stub>
-   
-  <vnavigationdrawer-stub
-    fixed="fixed"
-    height="100%"
-    minivariantwidth="80"
-    mobilebreakpoint="1264"
-    right="true"
-    temporary="true"
-    width="300"
-  >
-    <vlist-stub>
-      <vlisttile-stub
-        activeclass="primary--text"
-      >
-        <vlisttileaction-stub>
-          <vicon-stub
-            light="light"
-          />
-        </vlisttileaction-stub>
-         
-        <vlisttiletitle-stub />
-      </vlisttile-stub>
-    </vlist-stub>
-  </vnavigationdrawer-stub>
-</vapp-stub>
+exports[`Default layout renders to match snapshot 1`] = `
+<div data-app="true" class="application theme--light" id="app">
+  <div class="application--wrap">
+    <aside class="v-navigation-drawer v-navigation-drawer--fixed v-navigation-drawer--is-mobile v-navigation-drawer--open theme--light" style="height: 100%; margin-top: 0px; max-height: calc(100% - 0px); transform: translateX(0px); width: 300px;">
+      <div class="v-list theme--light">
+        <div><a router="" class="v-list__tile v-list__tile--link theme--light">
+            <div class="v-list__tile__action"><i aria-hidden="true" class="v-icon material-icons theme--light">apps</i></div>
+            <div class="v-list__tile__content">
+              <div class="v-list__tile__title">Welcome</div>
+            </div>
+          </a></div>
+        <div><a router="" class="v-list__tile v-list__tile--link theme--light">
+            <div class="v-list__tile__action"><i aria-hidden="true" class="v-icon material-icons theme--light">bubble_chart</i></div>
+            <div class="v-list__tile__content">
+              <div class="v-list__tile__title">Inspire</div>
+            </div>
+          </a></div>
+      </div>
+      <div class="v-navigation-drawer__border"></div>
+    </aside>
+    <nav class="v-toolbar v-toolbar--fixed theme--dark primary" style="margin-top: 0px; padding-right: 0px; padding-left: 0px; transform: translateY(0px);">
+      <div class="v-toolbar__content" style="height: 64px;"><button type="button" class="v-toolbar__side-icon v-btn v-btn--icon theme--dark">
+          <div class="v-btn__content"><i aria-hidden="true" class="v-icon material-icons theme--dark">$vuetify.icons.menu</i></div>
+        </button> <button type="button" class="v-btn v-btn--icon theme--dark">
+          <div class="v-btn__content"><i aria-hidden="true" class="v-icon material-icons theme--dark">chevron_left</i></div>
+        </button> <button type="button" class="v-btn v-btn--icon theme--dark">
+          <div class="v-btn__content"><i aria-hidden="true" class="v-icon material-icons theme--dark">web</i></div>
+        </button> <button type="button" class="v-btn v-btn--icon theme--dark">
+          <div class="v-btn__content"><i aria-hidden="true" class="v-icon material-icons theme--dark">remove</i></div>
+        </button>
+        <div class="v-toolbar__title">Vuetify.js</div>
+        <div class="spacer"></div> <button type="button" class="v-btn v-btn--icon theme--dark">
+          <div class="v-btn__content"><i aria-hidden="true" class="v-icon material-icons theme--dark">menu</i></div>
+        </button>
+      </div>
+    </nav>
+    <main class="v-content" style="padding: 64px 0px 0px 0px;">
+      <div class="v-content__wrap">
+        <div class="container">
+          <div></div>
+        </div>
+      </div>
+    </main>
+    <aside class="v-navigation-drawer v-navigation-drawer--close v-navigation-drawer--fixed v-navigation-drawer--right v-navigation-drawer--temporary theme--light" style="height: 100%; margin-top: 0px; max-height: calc(100% - 0px); transform: translateX(300px); width: 300px;">
+      <div class="v-list theme--light">
+        <div>
+          <div class="v-list__tile theme--light">
+            <div class="v-list__tile__action"><i aria-hidden="true" class="v-icon material-icons theme--light">compare_arrows</i></div>
+            <div class="v-list__tile__title">Switch drawer (click me)</div>
+          </div>
+        </div>
+      </div>
+      <div class="v-navigation-drawer__border"></div>
+    </aside>
+    <footer class="v-footer v-footer--fixed theme--light" style="height: 32px;"><span>© 2018</span></footer>
+  </div>
+</div>
 `;
