@@ -1497,9 +1497,9 @@ acorn@^5.0.0, acorn@^5.5.0, acorn@^5.5.3, acorn@^5.6.2, acorn@^5.7.3:
   integrity sha512-T/zvzYRfbVojPWahDsE5evJdHb3oJoQfFbsrKM7w5Zcs++Tr257tia3BmMP8XYVjp1S9RZXQMh7gao96BlqZOw==
 
 acorn@^6.0.1, acorn@^6.0.2:
-  version "6.0.2"
-  resolved "https://registry.yarnpkg.com/acorn/-/acorn-6.0.2.tgz#6a459041c320ab17592c6317abbfdf4bbaa98ca4"
-  integrity sha512-GXmKIvbrN3TV7aVqAzVFaMW8F8wzVX7voEBRO3bDA64+EX37YSayggRJP5Xig6HYHBkWKpFg9W5gg6orklubhg==
+  version "6.0.3"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-6.0.3.tgz#52adffeb02757f06420085a0ed0f7c0baf55fdf4"
+  integrity sha512-xEnlTS2J0PKuub0pd2Y4W58iEo1sfRZ3h23E8AKmlnV8Nc6E/syRdVeo0DMuLSrgRJZHnFeDou2llXfB+wb1/A==
 
 ajv-errors@^1.0.0:
   version "1.0.0"
@@ -2874,9 +2874,9 @@ consola@^1.4.3, consola@^1.4.4:
     std-env "^1.1.0"
 
 consola@^2.0.7:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/consola/-/consola-2.1.1.tgz#2be8bf537145d5adc47726024c84cf38e85b48e4"
-  integrity sha512-6CFUwEF1Scd7xPjdaN20VF8BV0RF2Fkc5nehvusfh/3ymDnn96K+sj+AM8wmWgCdMjglyo3vd+zszaS5MlhuCQ==
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/consola/-/consola-2.2.1.tgz#60c9800513e729a23f6d0b4e15599ab1d129bbf2"
+  integrity sha512-pjIU0YUXWdp1jir7NEh8MYyG1geOcJkdSi8JG3fJUkqTiQPxnhoceFPeo1PnlfmXKIzSSBIc+s0oiVkUe9ItKA==
   dependencies:
     chalk "^2.4.1"
     dayjs "^1.7.7"
@@ -3907,9 +3907,9 @@ eslint-plugin-import@^2.14.0:
     resolve "^1.6.0"
 
 eslint-plugin-jest@^21.26.2:
-  version "21.27.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-21.27.0.tgz#35ab98d41066efbac481b7a50b7c2877dfede70e"
-  integrity sha512-ePtyE/zUE+aCfB3fE9wfJWej2UFVDPxEUmKo62xbERRj026MrLUhrMuQHICosFI8/oTzbzi4ypk9qnfYnoIDaA==
+  version "21.27.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-21.27.1.tgz#b64c2d6a7f0751cecc14580d7f4d9a5520424448"
+  integrity sha512-K+S4Wa20MoRRXICfnQBqjl2g9+ipJBeDUVrB3Csg4wOrxXMGcNxYuPRaiyA0pqmb/vO2cgaLEzurORfsLrztxg==
 
 eslint-plugin-node@^8.0.0:
   version "8.0.0"
@@ -4943,9 +4943,9 @@ gm@^1.23.1:
     debug "^3.1.0"
 
 graceful-fs@^4.1.11, graceful-fs@^4.1.2, graceful-fs@^4.1.6:
-  version "4.1.14"
-  resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.1.14.tgz#1b6e8362ef8c5ecb5da799901f39297e3054773a"
-  integrity sha512-ns/IGcSmmGNPP085JCheg0Nombh1QPvSCnlx+2V+byQWRQEIL4ZB5jXJMNIHOFVS1roi85HIi5Ka0h43iWXfcQ==
+  version "4.1.15"
+  resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.1.15.tgz#ffb703e1066e8a0eeaa4c8b80ba9253eeefbfb00"
+  integrity sha512-6uHUhOPEBgQ24HM+r6b/QwWfZq+yiFcipKFrOFiBEnWdy5sdzYoi+pJeQaPI5qOLRFqWmAXUPQNsielzdLoecA==
 
 growly@^1.3.0:
   version "1.3.0"
@@ -6518,7 +6518,21 @@ listr-update-renderer@^0.2.0:
     log-update "^1.0.2"
     strip-ansi "^3.0.1"
 
-listr-update-renderer@^0.4.0, "listr-update-renderer@https://github.com/okonet/listr-update-renderer/tarball/upgrade-log-update":
+listr-update-renderer@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/listr-update-renderer/-/listr-update-renderer-0.4.0.tgz#344d980da2ca2e8b145ba305908f32ae3f4cc8a7"
+  integrity sha1-NE2YDaLKLosUW6MFkI8yrj9MyKc=
+  dependencies:
+    chalk "^1.1.3"
+    cli-truncate "^0.2.1"
+    elegant-spinner "^1.0.1"
+    figures "^1.7.0"
+    indent-string "^3.0.0"
+    log-symbols "^1.0.2"
+    log-update "^1.0.2"
+    strip-ansi "^3.0.1"
+
+"listr-update-renderer@https://github.com/okonet/listr-update-renderer/tarball/upgrade-log-update":
   version "0.4.0"
   resolved "https://github.com/okonet/listr-update-renderer/tarball/upgrade-log-update#06073fa93166277607a7814f4e1f83960081414c"
   dependencies:
@@ -7328,9 +7342,9 @@ node-releases@^1.0.1:
     semver "^5.3.0"
 
 node-sass@^4.9.4:
-  version "4.9.4"
-  resolved "https://registry.yarnpkg.com/node-sass/-/node-sass-4.9.4.tgz#349bd7f1c89422ffe7e1e4b60f2055a69fbc5512"
-  integrity sha512-MXyurANsUoE4/6KmfMkwGcBzAnJQ5xJBGW7Ei6ea8KnUKuzHr/SguVBIi3uaUAHtZCPUYkvlJ3Ef5T5VAwVpaA==
+  version "4.10.0"
+  resolved "https://registry.yarnpkg.com/node-sass/-/node-sass-4.10.0.tgz#dcc2b364c0913630945ccbf7a2bbf1f926effca4"
+  integrity sha512-fDQJfXszw6vek63Fe/ldkYXmRYK/QS6NbvM3i5oEo9ntPDy4XX7BcKZyTKv+/kSSxRtXXc7l+MSwEmYc0CSy6Q==
   dependencies:
     async-foreach "^0.1.3"
     chalk "^1.1.1"
@@ -10220,9 +10234,9 @@ terser-webpack-plugin@^1.1.0:
     worker-farm "^1.5.2"
 
 terser@^3.8.1:
-  version "3.10.10"
-  resolved "https://registry.yarnpkg.com/terser/-/terser-3.10.10.tgz#af8d487963b80b5d6cb7bbe8cb23d396afaae5ff"
-  integrity sha512-hoeTVAMI68pOkqtvrgZRZj1nEkpIh5ABxet6+s801tE9BxOVIgzdGcIyoP791eaCqZ/79lcL1uOSnz2sL84Wag==
+  version "3.10.11"
+  resolved "https://registry.yarnpkg.com/terser/-/terser-3.10.11.tgz#e063da74b194dde9faf0a561f3a438c549d2da3f"
+  integrity sha512-iruZ7j14oBbRYJC5cP0/vTU7YOWjN+J1ZskEGoF78tFzXdkK2hbCL/3TRZN8XB+MuvFhvOHMp7WkOCBO4VEL5g==
   dependencies:
     commander "~2.17.1"
     source-map "~0.6.1"
