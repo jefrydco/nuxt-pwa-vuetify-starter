@@ -1,0 +1,24 @@
+runtime: nodejs10
+
+instance_class: F2
+
+automatic_scaling:
+  min_instances: 0
+
+handlers:
+  - url: /_nuxt
+    static_dir: .nuxt/dist/client
+    secure: always
+
+  - url: /(.*\.(gif|png|jpg|svg|ico|txt))$
+    static_files: static/\1
+    upload: static/.*\.(gif|png|jpg|svg|ico|txt)$
+    secure: always
+
+  - url: /.*
+    script: auto
+    secure: always
+
+env_variables:
+  NUXT_HOST: "0.0.0.0"
+  NUXT_PORT: "8080"
