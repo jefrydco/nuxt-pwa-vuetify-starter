@@ -43,6 +43,7 @@ $ yarn generate
 $ yarn test
 
 # Run e2e test
+$ yarn dev
 $ yarn test:e2e
 ```
 
