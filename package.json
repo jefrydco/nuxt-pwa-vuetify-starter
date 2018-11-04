@@ -30,7 +30,6 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt",
-    "prestart": "yarn build",
     "start": "nuxt start",
     "test": "yarn test:unit",
     "test:e2e": "cypress run",
