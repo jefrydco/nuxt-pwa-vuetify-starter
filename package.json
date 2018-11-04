@@ -68,7 +68,7 @@
     "eslint-loader": "^2.1.1",
     "eslint-plugin-cypress": "^2.1.0",
     "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jest": "^21.26.2",
+    "eslint-plugin-jest": "^21.27.0",
     "eslint-plugin-node": "^8.0.0",
     "eslint-plugin-prettier": "^3.0.0",
     "eslint-plugin-promise": "^4.0.1",
@@ -90,7 +90,7 @@
   "engines": {
     "node": ">=8.0.0",
     "npm": ">=6.4.1",
-    "yarn": ">=1.6.0"
+    "yarn": ">=1.12.1"
   },
   "husky": {
     "hooks": {
