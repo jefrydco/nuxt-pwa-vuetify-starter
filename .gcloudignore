@@ -1,3 +1,4 @@
+# Taken from: https://github.com/kamatte-me/nuxt2-gae-se
 # This file specifies files that are *not* uploaded to Google Cloud Platform
 # using gcloud. It follows the same syntax as .gitignore, with the addition of
 # "#!include" directives (which insert the entries of the given .gitignore-style
