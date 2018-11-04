@@ -1,16 +1,8 @@
 # Nuxt PWA Vuetify Starter
 
-<p>
-  <a href="https://circleci.com/gh/jefrydco/nuxt-pwa-vuetify-starter">
-    <img src="https://badgen.net/circleci/github/jefrydco/nuxt-pwa-vuetify-starter" alt="Circleci Build Status">
-  </a>
-  <a href="https://dev.azure.com/jefrydco/jefrydco/_build?definitionId=1">
-    <img src="https://dev.azure.com/jefrydco/jefrydco/_apis/build/status/jefrydco.nuxt-pwa-vuetify-starter" alt="Azure Build Status">
-  </a>
-  <a href="https://codecov.io/gh/jefrydco/nuxt-pwa-vuetify-starter">
-    <img src="https://badgen.net/codecov/c/github/jefrydco/nuxt-pwa-vuetify-starter" alt="Coverage Status">
-  </a>
- </p>
+[![CircleCI Build Status](https://badgen.net/circleci/github/jefrydco/nuxt-pwa-vuetify-starter)](https://circleci.com/gh/jefrydco/nuxt-pwa-vuetify-starter)
+[![Azure Build Status](https://dev.azure.com/jefrydco/jefrydco/_apis/build/status/jefrydco.nuxt-pwa-vuetify-starter)](https://dev.azure.com/jefrydco/jefrydco/_build?definitionId=1)
+[![Coverage Status](https://badgen.net/codecov/c/github/jefrydco/nuxt-pwa-vuetify-starter)](https://codecov.io/gh/jefrydco/nuxt-pwa-vuetify-starter)
 
 > Nuxt.js + PWA + Vuetify.js starter project
 
