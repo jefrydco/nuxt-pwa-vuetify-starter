@@ -4,8 +4,8 @@
   <a href="https://circleci.com/gh/jefrydco/nuxt-pwa-vuetify-starter">
     <img src="https://badgen.net/circleci/github/jefrydco/nuxt-pwa-vuetify-starter" alt="Circleci Build Status">
   </a>
-  <a href="https://dev.azure.com/jefrydco/nuxt-pwa-vuetify-starter/_build/latest?definitionId=1">
-    <img src="https://dev.azure.com/jefrydco/nuxt-pwa-vuetify-starter/_apis/build/status/jefrydco.nuxt-pwa-vuetify-starter" alt="Azure Build Status">
+  <a href="https://dev.azure.com/jefrydco/jefrydco/_build?definitionId=1">
+    <img src="https://dev.azure.com/jefrydco/jefrydco/_apis/build/status/jefrydco.nuxt-pwa-vuetify-starter" alt="Azure Build Status">
   </a>
   <a href="https://codecov.io/gh/jefrydco/nuxt-pwa-vuetify-starter">
     <img src="https://badgen.net/codecov/c/github/jefrydco/nuxt-pwa-vuetify-starter" alt="Coverage Status">
