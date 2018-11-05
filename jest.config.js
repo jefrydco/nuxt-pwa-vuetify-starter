@@ -21,9 +21,9 @@ module.exports = {
   },
   collectCoverage: true,
   collectCoverageFrom: [
-    "**/components/*.{js,vue}",
-    "**/layouts/*.{js,vue}",
-    "**/pages/*.{js,vue}",
+    "**/components/**/*.{js,vue}",
+    "**/layouts/**/*.{js,vue}",
+    "**/pages/**/*.{js,vue}",
     "!**/node_modules/**",
     "!**/coverage/**"
   ],
