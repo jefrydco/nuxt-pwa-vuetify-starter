@@ -5,5 +5,7 @@
   "screenshotsFolder": "test/e2e/screenshots",
   "pluginsFile": "test/e2e/plugins/index.js",
   "videosFolder": "test/e2e/videos",
-  "supportFile": "test/e2e/support/index.js"
+  "supportFile": "test/e2e/support/index.js",
+  "viewportWidth": 1366,
+  "viewportHeight": 768
 }
