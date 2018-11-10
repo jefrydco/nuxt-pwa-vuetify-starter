@@ -1,6 +1,7 @@
 {
-  "name": "nuxt-pwa-vuetify-starter-template",
+  "name": "nuxt-pwa-vuetify-starter",
   "version": "1.0.0",
+  "private": true,
   "description": "Nuxt.js + PWA + Vuetify.js starter project",
   "keywords": [
     "nuxt",
@@ -29,13 +30,13 @@
   },
   "scripts": {
     "build": "nuxt build",
+    "coverage": "codecov",
     "dev": "nuxt",
     "start": "nuxt start",
     "test": "yarn test:unit",
     "test:e2e": "cypress run",
     "test:e2e:open": "cypress open",
-    "test:unit": "jest",
-    "coverage": "codecov"
+    "test:unit": "jest"
   },
   "dependencies": {
     "@mdi/font": "^3.0.39",
