@@ -21,7 +21,6 @@ Vue.use(Vuetify, {
       max: 10,
       maxAge: 1000 * 60 * 60 // 1 hour
     }),
-    customProperties: true,
     cspNonce: "dQw4w9WgXcQ"
   },
   directives: {
