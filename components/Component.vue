@@ -8,7 +8,8 @@
       label="Example"
       required=""
       data-vv-name="example"
-      data-vv-as="Example"/>
+      data-vv-as="Example"
+    />
   </div>
 </template>
 
