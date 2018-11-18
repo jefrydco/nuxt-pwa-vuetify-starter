@@ -2,6 +2,9 @@ import nodeExternals from "webpack-node-externals";
 import VuetifyLoaderPlugin from "vuetify-loader/lib/plugin";
 
 export default {
+  // https://nuxtjs.org/api/configuration-modern
+  modern: true,
+
   // https://nuxtjs.org/api/configuration-head
   head: {
     titleTemplate: title =>
