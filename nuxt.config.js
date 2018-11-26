@@ -1,5 +1,6 @@
 import nodeExternals from "webpack-node-externals";
 import VuetifyLoaderPlugin from "vuetify-loader/lib/plugin";
+require("dotenv").config();
 
 export default {
   // https://nuxtjs.org/api/configuration-modern
@@ -27,6 +28,9 @@ export default {
     // https://nuxtjs.org/faq/cached-components/
     "@nuxtjs/component-cache",
 
+    // https://github.com/nuxt-community/dotenv-module
+    "@nuxtjs/dotenv",
+
     // https://pwa.nuxtjs.org/
     "@nuxtjs/pwa",
 
@@ -36,27 +40,30 @@ export default {
     // https://github.com/nuxt-community/sentry-module
     "@nuxtjs/sentry",
 
+    // https://github.com/Developmint/nuxt-webfontloader
+    "nuxt-webfontloader",
+
     // https://github.com/nuxt-community/analytics-module
     [
       "@nuxtjs/google-analytics",
       {
         // TODO: Change this id to your Google Analytics ID
-        id: "UA-XXXXX-X"
+        id: process.env.GOOGLE_ANALYTICS
       }
     ]
   ],
 
-  // https://github.com/nuxt-community/sentry-module#readme
-  sentry: {
-    // TODO: Change this dsn to your dsn value
-    dsn: ""
+  webfontloader: {
+    google: {
+      families: ["Roboto:100,300,400,500,700,900", "Material+Icons"]
+    }
   },
 
   // https://nuxtjs.org/api/configuration-plugins
   plugins: ["~/plugins/vuetify", "~/plugins/vee-validate"],
 
   // https://nuxtjs.org/api/configuration-css
-  css: ["~/assets/styles/fonts.css", "~/assets/styles/vuetify.styl"],
+  css: ["~/assets/styles/vuetify.styl"],
 
   // https://nuxtjs.org/api/configuration-build
   build: {
