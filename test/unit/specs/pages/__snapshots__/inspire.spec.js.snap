@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Inspire renders to match snapshot 1`] = `
-<vlayout-stub tag="div">
-  <vflex-stub tag="div" text-xs-center=""><img src="~static/v.png" alt="Vuetify.js" class="mb-5">
+<v-layout-stub tag="div">
+  <v-flex-stub tag="div" text-xs-center=""><img src="~static/v.png" alt="Vuetify.js" class="mb-5">
     <blockquote class="blockquote">
       “First, solve the problem. Then, write the code.”
       <footer><small><em>—John Johnson</em></small></footer>
     </blockquote>
-  </vflex-stub>
-</vlayout-stub>
+  </v-flex-stub>
+</v-layout-stub>
 `;

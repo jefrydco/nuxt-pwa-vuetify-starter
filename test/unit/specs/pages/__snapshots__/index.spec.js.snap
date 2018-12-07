@@ -1,15 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Index renders to match snapshot 1`] = `
-<vlayout-stub tag="div" column="" justify-center="" align-center="">
-  <vflex-stub tag="div" xs12="" sm8="" md6="">
+<v-layout-stub tag="div" column="" justify-center="" align-center="">
+  <v-flex-stub tag="div" xs12="" sm8="" md6="">
     <div class="text-xs-center"><img src="~static/v.png" alt="Vuetify.js" class="mb-5"></div>
-    <vcard-stub tag="div">
-      <vcardtitle-stub class="headline">
+    <v-card-stub tag="div">
+      <v-card-title-stub class="headline">
         Welcome to the Vuetify + Nuxt.js template
-      </vcardtitle-stub>
-      <vcardtext-stub>
-        <appcomponent-stub></appcomponent-stub>
+      </v-card-title-stub>
+      <v-card-text-stub>
+        <app-component-stub></app-component-stub>
         <p>
           Vuetify is a progressive Material Design component framework for
           Vue.js. It was designed to empower developers to create amazing
@@ -37,12 +37,12 @@ exports[`Index renders to match snapshot 1`] = `
         <hr class="my-3"> <a href="https://nuxtjs.org/" target="_blank">Nuxt Documentation</a> <br> <a href="https://github.com/nuxt/nuxt.js" target="_blank">
           Nuxt GitHub
         </a>
-      </vcardtext-stub>
-      <vcardactions-stub>
-        <vspacer-stub></vspacer-stub>
-        <vbtn-stub activeclass="v-btn--active" flat="true" tag="button" type="button" color="primary" nuxt="" to="/inspire">Continue</vbtn-stub>
-      </vcardactions-stub>
-    </vcard-stub>
-  </vflex-stub>
-</vlayout-stub>
+      </v-card-text-stub>
+      <v-card-actions-stub>
+        <v-spacer-stub></v-spacer-stub>
+        <v-btn-stub activeclass="v-btn--active" flat="true" tag="button" type="button" color="primary" nuxt="" to="/inspire">Continue</v-btn-stub>
+      </v-card-actions-stub>
+    </v-card-stub>
+  </v-flex-stub>
+</v-layout-stub>
 `;
