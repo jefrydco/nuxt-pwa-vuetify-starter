@@ -11,7 +11,6 @@
 This starter project includes official Nuxt.js modules for best PWA project:
 
 - [Axios](https://github.com/nuxt-community/axios-module)
-- [Browserconfig](https://github.com/nuxt-community/modules/tree/master/packages/browserconfig)
 - [Component-cache](https://github.com/nuxt-community/modules/tree/master/packages/component-cache)
 - [Dotenv](https://github.com/nuxt-community/dotenv-module)
 - [Google-analytics](https://github.com/nuxt-community/analytics-module)

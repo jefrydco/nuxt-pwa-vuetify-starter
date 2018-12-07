@@ -22,9 +22,6 @@ export default {
     // https://axios.nuxtjs.org/
     "@nuxtjs/axios",
 
-    // https://github.com/nuxt-community/modules/tree/master/packages/browserconfig
-    "@nuxtjs/browserconfig",
-
     // https://nuxtjs.org/faq/cached-components/
     "@nuxtjs/component-cache",
 
