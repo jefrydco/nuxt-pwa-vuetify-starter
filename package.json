@@ -32,6 +32,7 @@
     "build": "nuxt build",
     "coverage": "codecov",
     "dev": "nuxt",
+    "generate": "nuxt generate",
     "start": "nuxt start",
     "test": "npm run test:unit",
     "test:e2e": "cypress run",
