@@ -4,14 +4,14 @@ exports[`Default layout renders to match snapshot 1`] = `
 <div data-app="true" class="application theme--light" id="app">
   <div class="application--wrap">
     <aside class="v-navigation-drawer v-navigation-drawer--fixed v-navigation-drawer--is-mobile v-navigation-drawer--open theme--light" style="height: 100%; margin-top: 0px; max-height: calc(100% - 0px); transform: translateX(0px); width: 300px;">
-      <div class="v-list theme--light">
-        <div><a router="" class="v-list__tile v-list__tile--link theme--light">
+      <div role="list" class="v-list theme--light">
+        <div role="listitem"><a router="" class="v-list__tile v-list__tile--link theme--light">
             <div class="v-list__tile__action"><i aria-hidden="true" class="v-icon material-icons theme--light">apps</i></div>
             <div class="v-list__tile__content">
               <div class="v-list__tile__title">Welcome</div>
             </div>
           </a></div>
-        <div><a router="" class="v-list__tile v-list__tile--link theme--light">
+        <div role="listitem"><a router="" class="v-list__tile v-list__tile--link theme--light">
             <div class="v-list__tile__action"><i aria-hidden="true" class="v-icon material-icons theme--light">bubble_chart</i></div>
             <div class="v-list__tile__content">
               <div class="v-list__tile__title">Inspire</div>
@@ -44,8 +44,8 @@ exports[`Default layout renders to match snapshot 1`] = `
       </div>
     </main>
     <aside class="v-navigation-drawer v-navigation-drawer--close v-navigation-drawer--fixed v-navigation-drawer--right v-navigation-drawer--temporary theme--light" style="height: 100%; margin-top: 0px; max-height: calc(100% - 0px); transform: translateX(300px); width: 300px;">
-      <div class="v-list theme--light">
-        <div>
+      <div role="list" class="v-list theme--light">
+        <div role="listitem">
           <div class="v-list__tile theme--light">
             <div class="v-list__tile__action"><i aria-hidden="true" class="v-icon material-icons theme--light">compare_arrows</i></div>
             <div class="v-list__tile__title">Switch drawer (click me)</div>
@@ -54,7 +54,7 @@ exports[`Default layout renders to match snapshot 1`] = `
       </div>
       <div class="v-navigation-drawer__border"></div>
     </aside>
-    <footer class="v-footer v-footer--fixed theme--light" style="height: 32px;"><span>© 2018</span></footer>
+    <footer class="v-footer v-footer--fixed theme--light" style="height: 32px;"><span>© 2019</span></footer>
   </div>
 </div>
 `;
