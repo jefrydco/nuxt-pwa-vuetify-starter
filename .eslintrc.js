@@ -7,7 +7,7 @@ module.exports = {
   parserOptions: {
     parser: "babel-eslint"
   },
-  extends: ["@nuxtjs", "plugin:vue/recommended", "plugin:prettier/recommended"],
+  extends: ["@nuxtjs", "plugin:vue/recommended", "prettier", "prettier/vue"],
   plugins: ["import", "vue", "prettier"],
   settings: {
     "import/resolver": {
