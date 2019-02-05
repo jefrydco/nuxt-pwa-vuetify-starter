@@ -4,7 +4,7 @@ exports[`Index renders to match snapshot 1`] = `
 <v-layout-stub tag="div" column="" justify-center="" align-center="">
   <v-flex-stub tag="div" xs12="" sm8="" md6="">
     <div class="text-xs-center"><img src="~static/v.png" alt="Vuetify.js" class="mb-5"></div>
-    <v-card-stub elevation="2">
+    <v-card-stub tag="div">
       <v-card-title-stub class="headline">
         Welcome to the Vuetify + Nuxt.js template
       </v-card-title-stub>
@@ -40,7 +40,7 @@ exports[`Index renders to match snapshot 1`] = `
       </v-card-text-stub>
       <v-card-actions-stub>
         <v-spacer-stub></v-spacer-stub>
-        <v-btn-stub activeclass="v-btn--active" flat="true" tag="button" type="button" color="primary" nuxt="" to="/inspire">Continue</v-btn-stub>
+        <v-btn-stub color="primary" activeclass="v-btn--active" to="/inspire" nuxt="true" tag="button" flat="true" type="button">Continue</v-btn-stub>
       </v-card-actions-stub>
     </v-card-stub>
   </v-flex-stub>
