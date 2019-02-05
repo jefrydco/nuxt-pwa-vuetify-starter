@@ -11,19 +11,19 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - v1-deps-{{ .Branch }}-{{ checksum "package-lock.json" }}
+            - v1-deps-{{ .Branch }}-{{ checksum "yarn.lock" }}
             - v1-deps-{{ .Branch }}
             - v1-deps
       - run:
           name: Install Dependencies
           command: npm install
       - save_cache:
-          key: v1-deps-{{ .Branch }}-{{ checksum "package-lock.json" }}
+          key: v1-deps-{{ .Branch }}-{{ checksum "yarn.lock" }}
           paths:
             - ~/.cache ## cache both npm and Cypress!
       - run:
           name: Run Unit Test
-          command: npm run test:unit
+          command: yarn test:unit
       - run:
           name: Publish Test Result
-          command: npm run coverage
+          command: yarn coverage
