@@ -5,6 +5,8 @@ test/e2e/videos
 # Nuxt Plugin
 static/sw.js
 static/browserconfig.xml
+static/OneSignalSDKUpdaterWorker.js
+static/OneSignalSDKWorker.js
 
 # Logs
 logs
