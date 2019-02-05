@@ -13,13 +13,13 @@ steps:
     displayName: "Install Node.js"
 
   - script: |
-      npm install
+      yarn install
     displayName: "Install Dependencies"
 
   - script: |
-      npm run test:unit
+      yarn test:unit
     displayName: "Run Unit Tests"
 
   - script: |
-      npm run coverage
+      yarn coverage
     displayName: "Publish Test Result"
