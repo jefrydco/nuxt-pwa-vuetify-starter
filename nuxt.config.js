@@ -35,7 +35,7 @@ export default {
     "@nuxtjs/sitemap",
 
     // https://github.com/nuxt-community/sentry-module
-    "@nuxtjs/sentry",
+    // "@nuxtjs/sentry",
 
     // https://github.com/Developmint/nuxt-webfontloader
     "nuxt-webfontloader",
@@ -45,7 +45,7 @@ export default {
       "@nuxtjs/google-analytics",
       {
         // TODO: Change this id to your Google Analytics ID
-        id: process.env.GOOGLE_ANALYTICS
+        id: process.env.GOOGLE_ANALYTICS || ""
       }
     ]
   ],

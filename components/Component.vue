@@ -1,8 +1,8 @@
 <template>
   <div id="component" class="mb-3">
     <v-text-field
-      v-validate="'required'"
       v-model="example"
+      v-validate="'required'"
       :error-messages="errors.collect('example')"
       box=""
       label="Example"
