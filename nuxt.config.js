@@ -38,16 +38,16 @@ export default {
     // "@nuxtjs/sentry",
 
     // https://github.com/Developmint/nuxt-webfontloader
-    "nuxt-webfontloader",
+    "nuxt-webfontloader"
 
     // https://github.com/nuxt-community/analytics-module
-    [
-      "@nuxtjs/google-analytics",
-      {
-        // TODO: Change this id to your Google Analytics ID
-        id: process.env.GOOGLE_ANALYTICS || ""
-      }
-    ]
+    // [
+    //   "@nuxtjs/google-analytics",
+    //   {
+    //     // TODO: Change this id to your Google Analytics ID
+    //     id: process.env.GOOGLE_ANALYTICS
+    //   }
+    // ]
   ],
 
   webfontloader: {

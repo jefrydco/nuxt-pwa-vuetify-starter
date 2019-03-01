@@ -7,6 +7,7 @@
       box=""
       label="Example"
       required=""
+      clearable=""
       data-vv-name="example"
       data-vv-as="Example"
     />
