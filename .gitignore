@@ -1,3 +1,5 @@
+.history
+
 # Cypress screenshots and videos
 test/e2e/screenshots
 test/e2e/videos
