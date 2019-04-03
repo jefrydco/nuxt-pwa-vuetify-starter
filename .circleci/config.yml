@@ -16,7 +16,7 @@ jobs:
             - v1-deps
       - run:
           name: Install Dependencies
-          command: npm install
+          command: yarn
       - save_cache:
           key: v1-deps-{{ .Branch }}-{{ checksum "yarn.lock" }}
           paths:
