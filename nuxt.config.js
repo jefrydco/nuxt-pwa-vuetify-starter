@@ -8,8 +8,12 @@ export default {
 
   // https://nuxtjs.org/api/configuration-head
   head: {
-    titleTemplate: title =>
-      title ? `${title} - Nuxt PWA Vuetify` : "Nuxt PWA Vuetify",
+    titleTemplate(title) {
+      if (title) {
+        return `${title} - Nuxt PWA Vuetify`;
+      }
+      return "Nuxt PWA Vuetify";
+    },
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
