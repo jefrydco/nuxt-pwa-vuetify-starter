@@ -64,10 +64,7 @@ export default {
   plugins: ["~/plugins/vuetify", "~/plugins/vee-validate"],
 
   // https://nuxtjs.org/api/configuration-css
-  css: ["~/assets/styles/vuetify.styl"],
-
-  // https://nuxtjs.org/api/configuration-watch
-  watch: ["~/vuex/**/*.js"],
+  css: ["~/assets/styles/vuetify"],
 
   // https://nuxtjs.org/api/configuration-build
   build: {
