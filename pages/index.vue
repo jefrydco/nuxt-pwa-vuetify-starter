@@ -62,14 +62,14 @@
 </template>
 
 <script>
-import AppComponent from "~/components/Component";
+import AppComponent from '~/components/Component'
 
 export default {
   components: {
     AppComponent
   },
   data() {
-    return {};
+    return {}
   }
-};
+}
 </script>

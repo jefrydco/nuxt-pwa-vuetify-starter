@@ -27,7 +27,7 @@
     <v-toolbar :clipped-left="clipped" color="primary" dark="" fixed app>
       <v-toolbar-side-icon @click="drawer = !drawer" />
       <v-btn icon @click.stop="miniVariant = !miniVariant">
-        <v-icon>{{ miniVariant ? "chevron_right" : "chevron_left" }}</v-icon>
+        <v-icon>{{ miniVariant ? 'chevron_right' : 'chevron_left' }}</v-icon>
       </v-btn>
       <v-btn icon @click.stop="clipped = !clipped">
         <v-icon>web</v-icon>
@@ -68,14 +68,14 @@ export default {
       drawer: true,
       fixed: false,
       items: [
-        { icon: "apps", title: "Welcome", to: "/" },
-        { icon: "bubble_chart", title: "Inspire", to: "/inspire" }
+        { icon: 'apps', title: 'Welcome', to: '/' },
+        { icon: 'bubble_chart', title: 'Inspire', to: '/inspire' }
       ],
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: "Vuetify.js"
-    };
+      title: 'Vuetify.js'
+    }
   }
-};
+}
 </script>

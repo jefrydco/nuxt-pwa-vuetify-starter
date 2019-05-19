@@ -5,20 +5,27 @@ module.exports = {
     node: true
   },
   parserOptions: {
-    parser: "babel-eslint"
+    parser: 'babel-eslint'
   },
-  extends: ["@nuxtjs", "plugin:vue/recommended", "prettier", "prettier/vue"],
-  plugins: ["import", "vue", "prettier"],
+  extends: [
+    '@nuxtjs',
+    'plugin:nuxt/recommended',
+    'plugin:vue/recommended',
+    'prettier',
+    'prettier/vue'
+  ],
+  plugins: ['import', 'vue', 'prettier'],
   settings: {
-    "import/resolver": {
+    'import/resolver': {
       node: {
-        extensions: [".js", ".jsx", ".vue"]
+        extensions: ['.js', '.jsx', '.vue']
       }
     }
   },
   rules: {
-    "no-param-reassign": "off",
-    "import/no-extraneous-dependencies": "off",
-    "prettier/prettier": "error"
+    'no-console': 'off',
+    'no-param-reassign': 'off',
+    'import/no-extraneous-dependencies': 'off',
+    'prettier/prettier': 'error'
   }
-};
+}
