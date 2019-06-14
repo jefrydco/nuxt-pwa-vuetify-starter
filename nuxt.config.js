@@ -1,5 +1,4 @@
 import VuetifyLoaderPlugin from 'vuetify-loader/lib/plugin'
-require('dotenv').config()
 
 const isDev = process.env.NODE_ENV !== 'production'
 
@@ -24,14 +23,8 @@ export default {
 
   // https://nuxtjs.org/api/configuration-modules
   modules: [
-    // https://axios.nuxtjs.org/
-    '@nuxtjs/axios',
-
-    // https://nuxtjs.org/faq/cached-components/
-    '@nuxtjs/component-cache',
-
-    // https://github.com/nuxt-community/dotenv-module
-    '@nuxtjs/dotenv',
+    // https://http.nuxtjs.org/
+    '@nuxt/http',
 
     // https://pwa.nuxtjs.org/
     '@nuxtjs/pwa',
@@ -65,7 +58,7 @@ export default {
   plugins: ['~plugins/vuetify', '~plugins/vee-validate'],
 
   // https://nuxtjs.org/api/configuration-css
-  css: ['@mdi/font/css/materialdesignicons.css', '~assets/styles/app.styl'],
+  css: ['~assets/styles/app.styl'],
 
   // https://nuxtjs.org/api/configuration-build
   build: {
