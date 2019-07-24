@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Logo renders to match snapshot 1`] = `
+<div class="VueToNuxtLogo">
+  <div class="Triangle Triangle--two"></div>
+  <div class="Triangle Triangle--one"></div>
+  <div class="Triangle Triangle--three"></div>
+  <div class="Triangle Triangle--four"></div>
+</div>
+`;

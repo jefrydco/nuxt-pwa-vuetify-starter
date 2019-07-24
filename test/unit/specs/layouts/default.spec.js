@@ -1,22 +1,29 @@
-import { mount, createLocalVue, RouterLinkStub } from "@vue/test-utils";
-import Vuetify from "vuetify";
-import VeeValidate from "vee-validate";
+import { mount, createLocalVue, RouterLinkStub } from '@vue/test-utils'
+import Vuetify from 'vuetify'
+import VeeValidate from 'vee-validate'
 
-import Default from "~/layouts/default";
+import Default from '~/layouts/default'
 
-const localVue = createLocalVue();
-localVue.use(Vuetify);
-localVue.use(VeeValidate);
+const localVue = createLocalVue()
+localVue.use(Vuetify)
+localVue.use(VeeValidate)
 
-describe("Default layout", () => {
-  it("renders to match snapshot", () => {
+describe('Default layout', () => {
+  let vuetify
+  beforeEach(() => {
+    vuetify = new Vuetify()
+  })
+  it('renders to match snapshot', () => {
     const wrapper = mount(Default, {
       localVue,
+      vuetify,
       stubs: {
-        nuxt: "nuxt",
-        "router-link": RouterLinkStub
+        nuxt: 'nuxt',
+        'router-link': RouterLinkStub,
+        'nuxt-link': RouterLinkStub,
+        'nuxt-child': 'nuxt-child'
       }
-    });
-    expect(wrapper).toMatchSnapshot();
-  });
-});
+    })
+    expect(wrapper).toMatchSnapshot()
+  })
+})

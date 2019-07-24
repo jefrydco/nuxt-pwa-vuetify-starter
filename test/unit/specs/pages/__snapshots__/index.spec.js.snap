@@ -3,13 +3,16 @@
 exports[`Index renders to match snapshot 1`] = `
 <v-layout-stub tag="div" column="" justify-center="" align-center="">
   <v-flex-stub tag="div" xs12="" sm8="" md6="">
-    <div class="text-xs-center"><img src="~static/v.png" alt="Vuetify.js" class="mb-5"></div>
-    <v-card-stub tag="div">
+    <div class="text-center">
+      <logo-stub></logo-stub>
+      <vuetify-logo-stub></vuetify-logo-stub>
+    </div>
+    <v-card-stub loaderheight="4" tag="div">
       <v-card-title-stub class="headline">
         Welcome to the Vuetify + Nuxt.js template
       </v-card-title-stub>
       <v-card-text-stub>
-        <app-component-stub></app-component-stub>
+        <v-text-field-stub errorcount="1" errormessages="" messages="" rules="" successmessages="" backgroundcolor="" label="Example" loaderheight="2" clearable="true" clearicon="$vuetify.icons.clear" filled="true" type="text" required="" data-vv-name="example" data-vv-as="Example"></v-text-field-stub>
         <p>
           Vuetify is a progressive Material Design component framework for
           Vue.js. It was designed to empower developers to create amazing
@@ -21,27 +24,21 @@ exports[`Index renders to match snapshot 1`] = `
         </p>
         <p>
           If you have questions, please join the official
-          <a href="https://chat.vuetifyjs.com/" target="_blank" title="chat">
-            discord </a>.
+          <a href="https://chat.vuetifyjs.com/" target="_blank" title="chat">discord</a>.
         </p>
         <p>
           Find a bug? Report it on the github
-          <a href="https://github.com/vuetifyjs/vuetify/issues" target="_blank" title="contribute">
-            issue board </a>.
+          <a href="https://github.com/vuetifyjs/vuetify/issues" target="_blank" title="contribute">issue board</a>.
         </p>
         <p>
           Thank you for developing with Vuetify and I look forward to bringing
           more exciting features in the future.
         </p>
-        <div class="text-xs-right"><em><small>— John Leider</small></em></div>
+        <div class="text-right"><em><small>— John Leider</small></em></div>
         <hr class="my-3"> <a href="https://nuxtjs.org/" target="_blank">Nuxt Documentation</a> <br> <a href="https://github.com/nuxt/nuxt.js" target="_blank">
           Nuxt GitHub
         </a>
       </v-card-text-stub>
-      <v-card-actions-stub>
-        <v-spacer-stub></v-spacer-stub>
-        <v-btn-stub color="primary" activeclass="v-btn--active" to="/inspire" nuxt="true" tag="button" flat="true" type="button">Continue</v-btn-stub>
-      </v-card-actions-stub>
     </v-card-stub>
   </v-flex-stub>
 </v-layout-stub>
