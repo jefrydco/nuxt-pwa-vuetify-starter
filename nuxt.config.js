@@ -1,5 +1,3 @@
-import VuetifyLoaderPlugin from 'vuetify-loader/lib/plugin'
-
 const isDev = process.env.NODE_ENV !== 'production'
 
 export default {
@@ -13,12 +11,7 @@ export default {
         return `${title} - Nuxt PWA Vuetify`
       }
       return 'Nuxt PWA Vuetify'
-    },
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
-    ]
+    }
   },
 
   // https://nuxtjs.org/api/configuration-modules
@@ -30,13 +23,10 @@ export default {
     '@nuxtjs/pwa',
 
     // https://github.com/nuxt-community/sitemap-module
-    '@nuxtjs/sitemap',
+    '@nuxtjs/sitemap'
 
     // https://github.com/nuxt-community/sentry-module
     // "@nuxtjs/sentry",
-
-    // https://github.com/Developmint/nuxt-webfontloader
-    'nuxt-webfontloader'
 
     // https://github.com/nuxt-community/analytics-module
     // [
@@ -48,28 +38,24 @@ export default {
     // ]
   ],
 
-  webfontloader: {
-    google: {
-      families: ['Roboto:100,300,400,500,700,900', 'Material+Icons']
-    }
+  devModules: [
+    // Simple usage
+    '@nuxtjs/vuetify'
+  ],
+
+  vuetify: {
+    treeShake: true
   },
 
   // https://nuxtjs.org/api/configuration-plugins
-  plugins: ['~plugins/vuetify', '~plugins/vee-validate'],
+  plugins: ['~plugins/vee-validate'],
 
   // https://nuxtjs.org/api/configuration-css
-  css: ['~assets/styles/app.styl'],
+  css: ['~assets/styles/app'],
 
   // https://nuxtjs.org/api/configuration-build
   build: {
     extractCSS: !isDev,
-    transpile: ['vuetify/lib'],
-    plugins: [new VuetifyLoaderPlugin()],
-    loaders: {
-      stylus: {
-        import: ['~assets/styles/variables.styl']
-      }
-    },
     extend(config, { isDev, isClient }) {
       if (isDev && isClient) {
         config.module.rules.push({

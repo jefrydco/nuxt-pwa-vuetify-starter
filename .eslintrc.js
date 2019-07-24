@@ -14,7 +14,7 @@ module.exports = {
     'prettier',
     'prettier/vue'
   ],
-  plugins: ['import', 'vue', 'prettier'],
+  plugins: ['import', 'vue', 'prettier', 'vuetify'],
   settings: {
     'import/resolver': {
       node: {
@@ -26,6 +26,7 @@ module.exports = {
     'no-console': 'off',
     'no-param-reassign': 'off',
     'import/no-extraneous-dependencies': 'off',
-    'prettier/prettier': 'error'
+    'prettier/prettier': 'error',
+    'vuetify/no-deprecated-classes': 'error'
   }
 }
