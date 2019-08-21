@@ -20,10 +20,7 @@ export default {
     '@nuxt/http',
 
     // https://pwa.nuxtjs.org/
-    '@nuxtjs/pwa',
-
-    // https://github.com/nuxt-community/sitemap-module
-    '@nuxtjs/sitemap'
+    '@nuxtjs/pwa'
 
     // https://github.com/nuxt-community/sentry-module
     // "@nuxtjs/sentry",
@@ -38,7 +35,7 @@ export default {
     // ]
   ],
 
-  devModules: [
+  buildModules: [
     // Simple usage
     '@nuxtjs/vuetify'
   ],

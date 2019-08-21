@@ -10,14 +10,14 @@
   opacity: 0
 }
 
-.fade-enter-active,
-.fade-leave-active {
+.layout-enter-active,
+.layout-leave-active {
   transition-duration: 0.3s;
   transition-property: opacity;
   transition-timing-function: ease;
 }
 
-.fade-enter,
-.fade-leave-active {
+.layout-enter,
+.layout-leave-active {
   opacity: 0
 }

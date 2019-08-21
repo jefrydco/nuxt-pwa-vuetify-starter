@@ -14,7 +14,6 @@ This starter project includes official Nuxt.js modules for best PWA project:
 - [Google-analytics](https://github.com/nuxt-community/analytics-module)
 - [PWA](https://github.com/nuxt-community/pwa-module)
 - [Sentry](https://github.com/nuxt-community/sentry-module)
-- [Sitemap](https://github.com/nuxt-community/sitemap-module)
 
 It is also enriched with the best Vue's UI framework:
 

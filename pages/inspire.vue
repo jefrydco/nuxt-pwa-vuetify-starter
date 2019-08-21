@@ -1,6 +1,6 @@
 <template>
-  <v-layout column="" justify-center="" align-center="">
-    <v-flex xs12="" sm8="" md6="">
+  <v-row justify="center" align="center">
+    <v-col cols="12" sm="8" md="6">
       <div class="text-center">
         <!-- eslint-disable-next-line -->
         <img src="~static/v.png" alt="Vuetify.js" class="mb-5" />
@@ -56,8 +56,8 @@
           <v-btn color="primary" text="" nuxt="" to="/inspire">Continue</v-btn>
         </v-card-actions>
       </v-card>
-    </v-flex>
-  </v-layout>
+    </v-col>
+  </v-row>
 </template>
 
 <script>
