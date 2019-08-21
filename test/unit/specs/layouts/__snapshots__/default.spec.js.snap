@@ -20,7 +20,7 @@ exports[`Default layout renders to match snapshot 1`] = `
       <div class="v-navigation-drawer__border"></div>
     </nav>
     <header class="v-sheet v-sheet--tile theme--dark v-toolbar v-app-bar v-app-bar--fixed indigo" style="margin-top: 0px; transform: translateY(0px); left: 0px; right: 0px;">
-      <div class="v-toolbar__content" style="height: 64px;"><button type="button" class="v-app-bar__nav-icon v-btn v-btn--fab v-btn--flat v-btn--icon v-btn--round theme--dark v-size--default"><span class="v-btn__content"><i aria-hidden="true" class="v-icon notranslate material-icons theme--dark">$vuetify.icons.menu</i></span></button>
+      <div class="v-toolbar__content" style="height: 64px;"><button type="button" class="v-app-bar__nav-icon v-btn v-btn--flat v-btn--icon v-btn--round theme--dark v-size--default"><span class="v-btn__content"><i aria-hidden="true" class="v-icon notranslate material-icons theme--dark">$vuetify.icons.menu</i></span></button>
         <div class="v-toolbar__title">Application</div>
       </div>
     </header>

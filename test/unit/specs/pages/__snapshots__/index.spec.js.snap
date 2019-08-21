@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Index renders to match snapshot 1`] = `
-<v-layout-stub tag="div" column="" justify-center="" align-center="">
-  <v-flex-stub tag="div" xs12="" sm8="" md6="">
+<v-row-stub tag="div" align="center" justify="center">
+  <v-col-stub cols="12" sm="8" md="6" tag="div">
     <div class="text-center">
       <logo-stub></logo-stub>
       <vuetify-logo-stub></vuetify-logo-stub>
@@ -40,6 +40,6 @@ exports[`Index renders to match snapshot 1`] = `
         </a>
       </v-card-text-stub>
     </v-card-stub>
-  </v-flex-stub>
-</v-layout-stub>
+  </v-col-stub>
+</v-row-stub>
 `;
