@@ -1,3 +1,4 @@
+import LRU from 'lru-cache'
 const isDev = process.env.NODE_ENV !== 'production'
 
 export default {
@@ -41,7 +42,19 @@ export default {
   ],
 
   vuetify: {
-    treeShake: true
+    theme: {
+      options: {
+        minifyTheme: function(css) {
+          return process.env.NODE_ENV === 'production'
+            ? css.replace(/[\r\n|\r|\n]/g, '')
+            : css
+        },
+        themeCache: new LRU({
+          max: 10,
+          maxAge: 1000 * 60 * 60
+        })
+      }
+    }
   },
 
   // https://nuxtjs.org/api/configuration-plugins
