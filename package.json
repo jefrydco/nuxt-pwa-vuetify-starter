@@ -44,7 +44,7 @@
     "@nuxtjs/google-analytics": "^2.0.2",
     "@nuxtjs/pwa": "^3.0.0-beta.16",
     "@nuxtjs/sentry": "^3.0.0",
-    "@nuxtjs/sitemap": "^1.2.0",
+    "@nuxtjs/sitemap": "^2.0.1",
     "lru-cache": "^5.1.1",
     "nuxt": "^2.3.4",
     "vee-validate": "^2.1.5"
