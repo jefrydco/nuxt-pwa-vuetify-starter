@@ -12,7 +12,7 @@ exports[`Index renders to match snapshot 1`] = `
         Welcome to the Vuetify + Nuxt.js template
       </v-card-title-stub>
       <v-card-text-stub>
-        <v-text-field-stub errorcount="1" errormessages="" messages="" rules="" successmessages="" backgroundcolor="" label="Example" loaderheight="2" clearable="true" clearicon="$vuetify.icons.clear" filled="true" type="text" required="" data-vv-name="example" data-vv-as="Example"></v-text-field-stub>
+        <v-text-field-stub errorcount="1" errormessages="" messages="" rules="" successmessages="" backgroundcolor="" label="Example" loaderheight="2" clearable="true" clearicon="$clear" filled="true" type="text" required="" data-vv-name="example" data-vv-as="Example"></v-text-field-stub>
         <p>
           Vuetify is a progressive Material Design component framework for
           Vue.js. It was designed to empower developers to create amazing
