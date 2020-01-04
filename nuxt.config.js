@@ -43,7 +43,7 @@ export default {
   vuetify: {},
 
   // https://nuxtjs.org/api/configuration-plugins
-  plugins: ['~plugins/vee-validate'],
+  plugins: [],
 
   // https://nuxtjs.org/api/configuration-css
   css: ['~assets/styles/app'],
@@ -51,6 +51,7 @@ export default {
   // https://nuxtjs.org/api/configuration-build
   build: {
     extractCSS: !isDev,
+    transpile: ['vee-validate/dist/rules'],
     extend(config, { isDev, isClient }) {
       if (isDev && isClient) {
         config.module.rules.push({

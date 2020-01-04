@@ -10,17 +10,22 @@
           Welcome to the Vuetify + Nuxt.js template
         </v-card-title>
         <v-card-text>
-          <v-text-field
-            v-model="example"
-            v-validate="'required'"
-            :error-messages="errors.collect('example')"
-            filled=""
-            label="Example"
-            required=""
-            clearable=""
-            data-vv-name="example"
-            data-vv-as="Example"
-          />
+          <validation-observer>
+            <validation-provider
+              #default="{ errors }"
+              name="Example"
+              rules="required"
+            >
+              <v-text-field
+                v-model="example"
+                :error-messages="errors"
+                filled=""
+                label="Example"
+                required=""
+                clearable=""
+              />
+            </validation-provider>
+          </validation-observer>
           <p>
             Vuetify is a progressive Material Design component framework for
             Vue.js. It was designed to empower developers to create amazing
@@ -65,11 +70,15 @@
 </template>
 
 <script>
+import { ValidationObserver, ValidationProvider, extend } from 'vee-validate'
+import { required } from 'vee-validate/dist/rules'
 import Logo from '~/components/Logo.vue'
 import VuetifyLogo from '~/components/VuetifyLogo.vue'
 
 export default {
   components: {
+    ValidationObserver,
+    ValidationProvider,
     Logo,
     VuetifyLogo
   },
@@ -77,6 +86,9 @@ export default {
     return {
       example: null
     }
+  },
+  mounted() {
+    extend('required', required)
   }
 }
 </script>
