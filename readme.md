@@ -18,7 +18,7 @@ This starter project includes official Nuxt.js modules for best PWA project:
 It is also enriched with the best Vue's UI framework:
 
 - [Vuetify](https://vuetifyjs.com)
-- [VeeValidate](https://baianat.github.io/vee-validate/)
+- [VeeValidate](https://logaretm.github.io/vee-validate)
 
 ## Setup
 
