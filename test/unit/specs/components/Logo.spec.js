@@ -1,12 +1,10 @@
 import { shallowMount, createLocalVue, RouterLinkStub } from '@vue/test-utils'
 import Vuetify from 'vuetify'
-import VeeValidate from 'vee-validate'
 
 import Logo from '~/components/Logo'
 
 const localVue = createLocalVue()
 localVue.use(Vuetify)
-localVue.use(VeeValidate)
 
 describe('Logo', () => {
   let vuetify

@@ -1,8 +1,8 @@
 module.exports = api => {
-  if (api.env("test")) {
+  if (api.env('test')) {
     return {
-      presets: [["@babel/env", { targets: { node: "current" } }]]
-    };
+      presets: [['@babel/env', { targets: { node: 'current' } }]]
+    }
   }
-  return {};
-};
+  return {}
+}

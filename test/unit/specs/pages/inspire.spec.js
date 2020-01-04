@@ -1,12 +1,10 @@
 import { shallowMount, createLocalVue, RouterLinkStub } from '@vue/test-utils'
 import Vuetify from 'vuetify'
-import VeeValidate from 'vee-validate'
 
 import Inspire from '~/pages/inspire'
 
 const localVue = createLocalVue()
 localVue.use(Vuetify)
-localVue.use(VeeValidate)
 
 describe('Inspire', () => {
   let vuetify

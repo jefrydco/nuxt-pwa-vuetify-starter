@@ -1,12 +1,10 @@
 import { shallowMount, createLocalVue, RouterLinkStub } from '@vue/test-utils'
 import Vuetify from 'vuetify'
-import VeeValidate from 'vee-validate'
 
 import Index from '~/pages/index'
 
 const localVue = createLocalVue()
 localVue.use(Vuetify)
-localVue.use(VeeValidate)
 
 describe('Index', () => {
   let vuetify

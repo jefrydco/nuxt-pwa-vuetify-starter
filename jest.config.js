@@ -29,5 +29,6 @@ module.exports = {
     '!**/coverage/**'
   ],
   coverageDirectory: '<rootDir>/test/unit/coverage',
-  snapshotSerializers: ['jest-serializer-vue']
+  snapshotSerializers: ['jest-serializer-vue'],
+  transformIgnorePatterns: ['node_modules/(?!vee-validate/dist/rules)']
 }
