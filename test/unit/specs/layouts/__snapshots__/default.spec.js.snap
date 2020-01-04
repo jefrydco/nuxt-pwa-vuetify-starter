@@ -35,7 +35,7 @@ exports[`Default layout renders to match snapshot 1`] = `
         </div>
       </div>
     </main>
-    <footer class="v-footer v-sheet v-sheet--tile theme--light v-footer--fixed indigo" style="left: 0px; right: 0px; bottom: 0px;"><span class="white--text">© 2019</span></footer>
+    <footer class="v-footer v-sheet v-sheet--tile theme--light v-footer--fixed indigo" style="left: 0px; right: 0px; bottom: 0px;"><span class="white--text">© 2020</span></footer>
   </div>
 </div>
 `;
