@@ -40,14 +40,14 @@
     "test:unit": "jest"
   },
   "dependencies": {
-    "@nuxt/http": "^0.3.8",
-    "@nuxtjs/google-analytics": "^2.2.2",
-    "@nuxtjs/pwa": "^3.0.0-beta.19",
-    "@nuxtjs/sentry": "^3.0.1",
-    "@nuxtjs/sitemap": "^2.0.1",
+    "@nuxt/http": "^0.5.0",
+    "@nuxtjs/google-analytics": "^2.2.3",
+    "@nuxtjs/pwa": "^3.0.0-beta.20",
+    "@nuxtjs/sentry": "^4.0.1",
+    "@nuxtjs/sitemap": "^2.2.0",
     "lru-cache": "^5.1.1",
-    "nuxt": "^2.11.0",
-    "vee-validate": "^3.2.1"
+    "nuxt": "^2.12.2",
+    "vee-validate": "^3.2.5"
   },
   "devDependencies": {
     "@babel/core": "^7.7.7",
@@ -93,8 +93,7 @@
   "lint-staged": {
     "*.{js,vue}": [
       "prettier --write",
-      "eslint --fix",
-      "git add"
+      "eslint --fix"
     ]
   }
 }
