@@ -16,7 +16,7 @@ jobs:
             - v1-deps
       - run:
           name: Install Dependencies
-          command: yarn
+          command: yarn --ignore-engines
       - save_cache:
           key: v1-deps-{{ .Branch }}-{{ checksum "yarn.lock" }}
           paths:
