@@ -5,7 +5,7 @@ exports[`Default layout renders to match snapshot 1`] = `
   <div class="v-application--wrap">
     <nav class="v-navigation-drawer v-navigation-drawer--close v-navigation-drawer--fixed v-navigation-drawer--is-mobile theme--light" style="height: 100vh; top: 0px; transform: translateX(-100%); width: 256px;">
       <div class="v-navigation-drawer__content">
-        <div class="v-list v-sheet v-sheet--tile theme--light v-list--dense"><a tabindex="0" class="v-list-item v-list-item--link theme--light">
+        <div class="v-list v-sheet theme--light v-list--dense"><a tabindex="0" class="v-list-item v-list-item--link theme--light">
             <div class="v-list-item__action"><i aria-hidden="true" class="v-icon notranslate mdi mdi-home theme--light"></i></div>
             <div class="v-list-item__content">
               <div class="v-list-item__title">Home</div>
@@ -19,13 +19,13 @@ exports[`Default layout renders to match snapshot 1`] = `
       </div>
       <div class="v-navigation-drawer__border"></div>
     </nav>
-    <header class="v-sheet v-sheet--tile theme--dark v-toolbar v-app-bar v-app-bar--fixed indigo" style="height: 64px; margin-top: 0px; transform: translateY(0px); left: 0px; right: 0px;">
+    <header class="v-sheet theme--dark v-toolbar v-app-bar v-app-bar--fixed indigo" style="height: 64px; margin-top: 0px; transform: translateY(0px); left: 0px; right: 0px;">
       <div class="v-toolbar__content" style="height: 64px;"><button type="button" class="v-app-bar__nav-icon v-btn v-btn--flat v-btn--icon v-btn--round theme--dark v-size--default"><span class="v-btn__content"><i aria-hidden="true" class="v-icon notranslate material-icons theme--dark">$menu</i></span></button>
         <div class="v-toolbar__title">Application</div>
       </div>
     </header>
-    <main class="v-content" style="padding: 64px 0px 0px 0px;">
-      <div class="v-content__wrap">
+    <main class="v-main" style="padding: 64px 0px 0px 0px;">
+      <div class="v-main__wrap">
         <div class="container container--fluid fill-height">
           <div class="layout justify-center align-center">
             <div class="flex">
@@ -35,7 +35,7 @@ exports[`Default layout renders to match snapshot 1`] = `
         </div>
       </div>
     </main>
-    <footer class="v-footer v-sheet v-sheet--tile theme--light v-footer--fixed indigo" style="left: 0px; right: 0px; bottom: 0px;"><span class="white--text">© 2020</span></footer>
+    <footer class="v-footer v-sheet theme--light v-footer--fixed indigo" style="left: 0px; right: 0px; bottom: 0px;"><span class="white--text">© 2020</span></footer>
   </div>
 </div>
 `;
