@@ -58,7 +58,7 @@
     "babel-core": "^7.0.0-bridge",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^26.0.1",
-    "codecov": "^3.7.0",
+    "codecov": "^3.7.1",
     "cypress": "^4.8.0",
     "eslint": "^7.2.0",
     "eslint-config-prettier": "^6.11.0",
