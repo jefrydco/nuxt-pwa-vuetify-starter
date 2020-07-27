@@ -24,8 +24,8 @@ exports[`Default layout renders to match snapshot 1`] = `
         <div class="v-toolbar__title">Application</div>
       </div>
     </header>
-    <main class="v-main" style="padding: 64px 0px 0px 0px;">
-      <div class="v-main__wrap">
+    <main class="v-main v-content" style="padding: 64px 0px 0px 0px;">
+      <div class="v-main__wrap v-content__wrap">
         <div class="container container--fluid fill-height">
           <div class="layout justify-center align-center">
             <div class="flex">
