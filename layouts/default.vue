@@ -28,7 +28,7 @@
       <v-container fluid fill-height>
         <v-layout justify-center align-center>
           <v-flex>
-            <nuxt-child />
+            <nuxt />
           </v-flex>
         </v-layout>
       </v-container>
