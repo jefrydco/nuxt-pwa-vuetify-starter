@@ -24,7 +24,7 @@
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
       <v-toolbar-title>Application</v-toolbar-title>
     </v-app-bar>
-    <v-content>
+    <v-main>
       <v-container fluid fill-height>
         <v-layout justify-center align-center>
           <v-flex>
@@ -32,7 +32,7 @@
           </v-flex>
         </v-layout>
       </v-container>
-    </v-content>
+    </v-main>
     <v-footer color="indigo" app>
       <span class="white--text">&copy; {{ new Date().getFullYear() }}</span>
     </v-footer>

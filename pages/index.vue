@@ -12,7 +12,7 @@
         <v-card-text>
           <validation-observer>
             <validation-provider
-              #default="{ errors }"
+              v-slot="{ errors }"
               name="Example"
               rules="required"
             >
