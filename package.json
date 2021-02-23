@@ -83,7 +83,7 @@
     "vue-jest": "^3.0.7"
   },
   "engines": {
-    "node": ">=8.0.0"
+    "node": ">=v14.16.0"
   },
   "husky": {
     "hooks": {
