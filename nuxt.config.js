@@ -37,10 +37,18 @@ export default {
 
   buildModules: [
     // Simple usage
-    '@nuxtjs/vuetify'
+    '@nuxtjs/vuetify',
+
+    // https://github.com/nuxt-community/eslint-module
+    '@nuxtjs/eslint-module'
   ],
 
   vuetify: {},
+
+  // https://github.com/nuxt-community/eslint-module
+  eslint: {
+    fix: true
+  },
 
   // https://nuxtjs.org/api/configuration-plugins
   plugins: [],
@@ -51,19 +59,6 @@ export default {
   // https://nuxtjs.org/api/configuration-build
   build: {
     extractCSS: !isDev,
-    transpile: ['vee-validate/dist/rules'],
-    extend(config, { isDev, isClient }) {
-      if (isDev && isClient) {
-        config.module.rules.push({
-          enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /node_modules/,
-          options: {
-            fix: true
-          }
-        })
-      }
-    }
+    transpile: ['vee-validate/dist/rules']
   }
 }

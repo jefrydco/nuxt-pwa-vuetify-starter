@@ -4,24 +4,8 @@ module.exports = {
     browser: true,
     node: true
   },
-  parserOptions: {
-    parser: 'babel-eslint'
-  },
-  extends: [
-    '@nuxtjs',
-    'plugin:nuxt/recommended',
-    'plugin:vue/recommended',
-    'prettier',
-    'prettier/vue'
-  ],
-  plugins: ['import', 'vue', 'prettier', 'vuetify'],
-  settings: {
-    'import/resolver': {
-      node: {
-        extensions: ['.js', '.jsx', '.vue']
-      }
-    }
-  },
+  extends: ['@nuxtjs', 'plugin:vue/recommended', 'plugin:prettier/recommended'],
+  plugins: ['vue', 'prettier', 'vuetify'],
   rules: {
     'no-console': 'off',
     'no-param-reassign': 'off',
