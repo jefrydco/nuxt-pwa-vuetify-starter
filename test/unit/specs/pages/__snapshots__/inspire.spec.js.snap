@@ -5,10 +5,10 @@ exports[`Inspire renders to match snapshot 1`] = `
   <v-col-stub cols="12" sm="8" md="6" tag="div">
     <div class="text-center"><img src="~static/v.png" alt="Vuetify.js" class="mb-5"></div>
     <v-card-stub loaderheight="4" tag="div">
-      <v-card-title-stub class="headline">
+      <v-card-title-stub tag="div" class="headline">
         Welcome to the Vuetify + Nuxt.js template
       </v-card-title-stub>
-      <v-card-text-stub>
+      <v-card-text-stub tag="div">
         <p>
           Vuetify is a progressive Material Design component framework for
           Vue.js. It was designed to empower developers to create amazing
@@ -37,8 +37,8 @@ exports[`Inspire renders to match snapshot 1`] = `
           Nuxt GitHub
         </a>
       </v-card-text-stub>
-      <v-card-actions-stub>
-        <v-spacer-stub></v-spacer-stub>
+      <v-card-actions-stub tag="div">
+        <v-spacer-stub tag="div"></v-spacer-stub>
         <v-btn-stub color="primary" tag="button" activeclass="" to="/inspire" nuxt="true" text="true" type="button">Continue</v-btn-stub>
       </v-card-actions-stub>
     </v-card-stub>

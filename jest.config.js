@@ -1,5 +1,6 @@
 module.exports = {
   verbose: true,
+  testEnvironment: "jsdom",
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/$1',
     '^~/(.*)$': '<rootDir>/$1',
@@ -13,7 +14,7 @@ module.exports = {
   ],
   transform: {
     // process `*.vue` files with `vue-jest`
-    '.*\\.(vue)$': 'vue-jest',
+    '.*\\.(vue)$': '@vue/vue2-jest',
     // process js with `babel-jest`
     '^.+\\.js$': 'babel-jest',
     // Stub non js file
@@ -26,7 +27,8 @@ module.exports = {
     '**/layouts/**/*.{js,vue}',
     '**/pages/**/*.{js,vue}',
     '!**/node_modules/**',
-    '!**/coverage/**'
+    '!**/coverage/**',
+    '!**/.nuxt/**'
   ],
   coverageDirectory: '<rootDir>/test/unit/coverage',
   snapshotSerializers: ['jest-serializer-vue'],

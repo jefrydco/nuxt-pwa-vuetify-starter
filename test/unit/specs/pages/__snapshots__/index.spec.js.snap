@@ -8,12 +8,12 @@ exports[`Index renders to match snapshot 1`] = `
       <vuetify-logo-stub></vuetify-logo-stub>
     </div>
     <v-card-stub loaderheight="4" tag="div">
-      <v-card-title-stub class="headline">
+      <v-card-title-stub tag="div" class="headline">
         Welcome to the Vuetify + Nuxt.js template
       </v-card-title-stub>
-      <v-card-text-stub>
+      <v-card-text-stub tag="div">
         <validation-observer-stub tag="span" vid="obs_0">
-          <validation-provider-stub vid="" name="Example" mode="aggressive" rules="required" bails="true" skipifempty="true" debounce="0" tag="span" custommessages="[object Object]"></validation-provider-stub>
+          <validation-provider-stub vid="" name="Example" mode="aggressive" rules="required" bails="true" skipifempty="true" debounce="0" tag="span" custommessages="[object Object]" detectinput="true"></validation-provider-stub>
         </validation-observer-stub>
         <p>
           Vuetify is a progressive Material Design component framework for
