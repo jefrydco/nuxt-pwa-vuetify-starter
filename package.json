@@ -45,7 +45,7 @@
     "@nuxtjs/pwa": "^3.3.5",
     "@nuxtjs/sentry": "^5.1.6",
     "@nuxtjs/sitemap": "^2.4.0",
-    "lru-cache": "^6.0.0",
+    "lru-cache": "^9.1.2",
     "nuxt": "^2.15.8",
     "vee-validate": "^3.4.14"
   },
