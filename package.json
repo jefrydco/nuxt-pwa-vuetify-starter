@@ -43,39 +43,39 @@
     "@nuxt/http": "^0.6.4",
     "@nuxtjs/google-analytics": "^2.4.0",
     "@nuxtjs/pwa": "^3.3.5",
-    "@nuxtjs/sentry": "^5.1.6",
+    "@nuxtjs/sentry": "^5.1.7",
     "@nuxtjs/sitemap": "^2.4.0",
     "lru-cache": "^6.0.0",
-    "nuxt": "^2.15.8",
-    "vee-validate": "^3.4.14"
+    "nuxt": "^2.18.1",
+    "vee-validate": "^3.4.15"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^8.0.0",
-    "@nuxtjs/eslint-module": "^3.0.2",
+    "@nuxtjs/eslint-module": "^3.1.0",
     "@nuxtjs/vuetify": "^1.12.3",
-    "@vue/test-utils": "^1.3.0",
-    "@vue/vue2-jest": "^27.0.0-alpha.4",
-    "babel-jest": "^27.4.6",
+    "@vue/test-utils": "^1.3.6",
+    "@vue/vue2-jest": "^27.0.0",
+    "babel-jest": "^27.5.1",
     "codecov": "^3.8.3",
-    "cypress": "^9.2.0",
-    "eslint": "^7.21.0",
-    "eslint-config-prettier": "^8.3.0",
+    "cypress": "^9.7.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.10.0",
     "eslint-loader": "^4.0.2",
-    "eslint-plugin-cypress": "^2.12.1",
-    "eslint-plugin-jest": "^25.3.4",
-    "eslint-plugin-nuxt": "^3.1.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-vue": "^8.2.0",
+    "eslint-plugin-cypress": "^2.15.2",
+    "eslint-plugin-jest": "^25.7.0",
+    "eslint-plugin-nuxt": "^3.2.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^8.7.1",
     "eslint-plugin-vuetify": "^1.1.0",
     "husky": "^7.0.4",
-    "jest": "^27.4.7",
+    "jest": "^27.5.1",
     "jest-serializer-vue": "^2.0.2",
     "jest-transform-stub": "^2.0.0",
-    "lint-staged": "^12.1.7",
-    "prettier": "^2.5.1"
+    "lint-staged": "^12.5.0",
+    "prettier": "^2.8.8"
   },
   "engines": {
-    "node": ">=8.0.0"
+    "node": ">=8.17.0"
   },
   "husky": {
     "hooks": {
