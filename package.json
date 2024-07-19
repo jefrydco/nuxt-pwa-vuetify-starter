@@ -46,7 +46,7 @@
     "@nuxtjs/sentry": "^5.1.6",
     "@nuxtjs/sitemap": "^2.4.0",
     "lru-cache": "^6.0.0",
-    "nuxt": "^2.15.8",
+    "nuxt": "^3.12.4",
     "vee-validate": "^3.4.14"
   },
   "devDependencies": {
