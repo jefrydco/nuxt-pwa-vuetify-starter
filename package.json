@@ -47,7 +47,7 @@
     "@nuxtjs/sitemap": "^2.4.0",
     "lru-cache": "^6.0.0",
     "nuxt": "^2.15.8",
-    "vee-validate": "^3.4.14"
+    "vee-validate": "^4.14.4"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^8.0.0",
